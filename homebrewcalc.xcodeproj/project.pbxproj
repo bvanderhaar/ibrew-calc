@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BB9789F17614C6100D1D1E9 /* BVGravityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9789E17614C6100D1D1E9 /* BVGravityTextField.m */; };
 		C901A122175EAA7D0080D99D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C901A121175EAA7D0080D99D /* UIKit.framework */; };
 		C901A124175EAA7D0080D99D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C901A123175EAA7D0080D99D /* Foundation.framework */; };
 		C901A126175EAA7D0080D99D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C901A125175EAA7D0080D99D /* CoreGraphics.framework */; };
@@ -17,7 +18,7 @@
 		C901A136175EAA7D0080D99D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A135175EAA7D0080D99D /* Default@2x.png */; };
 		C901A138175EAA7D0080D99D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A137175EAA7D0080D99D /* Default-568h@2x.png */; };
 		C901A13B175EAA7D0080D99D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C901A139175EAA7D0080D99D /* MainStoryboard.storyboard */; };
-		C901A13E175EAA7D0080D99D /* BVFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A13D175EAA7D0080D99D /* BVFirstViewController.m */; };
+		C901A13E175EAA7D0080D99D /* BVSpecificGravityController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */; };
 		C901A140175EAA7D0080D99D /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A13F175EAA7D0080D99D /* first.png */; };
 		C901A142175EAA7D0080D99D /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A141175EAA7D0080D99D /* first@2x.png */; };
 		C901A145175EAA7D0080D99D /* BVSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A144175EAA7D0080D99D /* BVSecondViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BB9789D17614C6100D1D1E9 /* BVGravityTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVGravityTextField.h; sourceTree = "<group>"; };
+		4BB9789E17614C6100D1D1E9 /* BVGravityTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVGravityTextField.m; sourceTree = "<group>"; };
 		C901A11E175EAA7D0080D99D /* homebrewcalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homebrewcalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C901A121175EAA7D0080D99D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C901A123175EAA7D0080D99D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,8 +43,8 @@
 		C901A135175EAA7D0080D99D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C901A137175EAA7D0080D99D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C901A13A175EAA7D0080D99D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C901A13C175EAA7D0080D99D /* BVFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVFirstViewController.h; sourceTree = "<group>"; };
-		C901A13D175EAA7D0080D99D /* BVFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVFirstViewController.m; sourceTree = "<group>"; };
+		C901A13C175EAA7D0080D99D /* BVSpecificGravityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVSpecificGravityController.h; sourceTree = "<group>"; };
+		C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVSpecificGravityController.m; sourceTree = "<group>"; };
 		C901A13F175EAA7D0080D99D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		C901A141175EAA7D0080D99D /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		C901A143175EAA7D0080D99D /* BVSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVSecondViewController.h; sourceTree = "<group>"; };
@@ -97,8 +100,8 @@
 				C901A130175EAA7D0080D99D /* BVAppDelegate.h */,
 				C901A131175EAA7D0080D99D /* BVAppDelegate.m */,
 				C901A139175EAA7D0080D99D /* MainStoryboard.storyboard */,
-				C901A13C175EAA7D0080D99D /* BVFirstViewController.h */,
-				C901A13D175EAA7D0080D99D /* BVFirstViewController.m */,
+				C901A13C175EAA7D0080D99D /* BVSpecificGravityController.h */,
+				C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */,
 				C901A13F175EAA7D0080D99D /* first.png */,
 				C901A141175EAA7D0080D99D /* first@2x.png */,
 				C901A143175EAA7D0080D99D /* BVSecondViewController.h */,
@@ -106,6 +109,8 @@
 				C901A146175EAA7D0080D99D /* second.png */,
 				C901A148175EAA7D0080D99D /* second@2x.png */,
 				C901A128175EAA7D0080D99D /* Supporting Files */,
+				4BB9789D17614C6100D1D1E9 /* BVGravityTextField.h */,
+				4BB9789E17614C6100D1D1E9 /* BVGravityTextField.m */,
 			);
 			path = homebrewcalc;
 			sourceTree = "<group>";
@@ -197,8 +202,9 @@
 			files = (
 				C901A12E175EAA7D0080D99D /* main.m in Sources */,
 				C901A132175EAA7D0080D99D /* BVAppDelegate.m in Sources */,
-				C901A13E175EAA7D0080D99D /* BVFirstViewController.m in Sources */,
+				C901A13E175EAA7D0080D99D /* BVSpecificGravityController.m in Sources */,
 				C901A145175EAA7D0080D99D /* BVSecondViewController.m in Sources */,
+				4BB9789F17614C6100D1D1E9 /* BVGravityTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +327,7 @@
 				C901A14E175EAA7D0080D99D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

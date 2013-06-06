@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Brett VanderHaar. All rights reserved.
 //
 
-#import "BVFirstViewController.h"
+#import "BVSpecificGravityController.h"
 
-@interface BVFirstViewController ()
+@interface BVSpecificGravityController ()
 
 @end
 
-@implementation BVFirstViewController
+@implementation BVSpecificGravityController
 
 - (void)viewDidLoad
 {

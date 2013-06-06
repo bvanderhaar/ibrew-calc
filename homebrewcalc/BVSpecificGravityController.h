@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BVFirstViewController : UIViewController
+@interface BVSpecificGravityController : UIViewController
 
 @end
