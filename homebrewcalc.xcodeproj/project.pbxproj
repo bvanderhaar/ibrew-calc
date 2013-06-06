@@ -21,7 +21,7 @@
 		C901A13E175EAA7D0080D99D /* BVSpecificGravityController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */; };
 		C901A140175EAA7D0080D99D /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A13F175EAA7D0080D99D /* first.png */; };
 		C901A142175EAA7D0080D99D /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A141175EAA7D0080D99D /* first@2x.png */; };
-		C901A145175EAA7D0080D99D /* BVSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A144175EAA7D0080D99D /* BVSecondViewController.m */; };
+		C901A145175EAA7D0080D99D /* BVAbvController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A144175EAA7D0080D99D /* BVAbvController.m */; };
 		C901A147175EAA7D0080D99D /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A146175EAA7D0080D99D /* second.png */; };
 		C901A149175EAA7D0080D99D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A148175EAA7D0080D99D /* second@2x.png */; };
 /* End PBXBuildFile section */
@@ -47,8 +47,8 @@
 		C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVSpecificGravityController.m; sourceTree = "<group>"; };
 		C901A13F175EAA7D0080D99D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		C901A141175EAA7D0080D99D /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		C901A143175EAA7D0080D99D /* BVSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVSecondViewController.h; sourceTree = "<group>"; };
-		C901A144175EAA7D0080D99D /* BVSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVSecondViewController.m; sourceTree = "<group>"; };
+		C901A143175EAA7D0080D99D /* BVAbvController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVAbvController.h; sourceTree = "<group>"; };
+		C901A144175EAA7D0080D99D /* BVAbvController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVAbvController.m; sourceTree = "<group>"; };
 		C901A146175EAA7D0080D99D /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		C901A148175EAA7D0080D99D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,8 +104,8 @@
 				C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */,
 				C901A13F175EAA7D0080D99D /* first.png */,
 				C901A141175EAA7D0080D99D /* first@2x.png */,
-				C901A143175EAA7D0080D99D /* BVSecondViewController.h */,
-				C901A144175EAA7D0080D99D /* BVSecondViewController.m */,
+				C901A143175EAA7D0080D99D /* BVAbvController.h */,
+				C901A144175EAA7D0080D99D /* BVAbvController.m */,
 				C901A146175EAA7D0080D99D /* second.png */,
 				C901A148175EAA7D0080D99D /* second@2x.png */,
 				C901A128175EAA7D0080D99D /* Supporting Files */,
@@ -203,7 +203,7 @@
 				C901A12E175EAA7D0080D99D /* main.m in Sources */,
 				C901A132175EAA7D0080D99D /* BVAppDelegate.m in Sources */,
 				C901A13E175EAA7D0080D99D /* BVSpecificGravityController.m in Sources */,
-				C901A145175EAA7D0080D99D /* BVSecondViewController.m in Sources */,
+				C901A145175EAA7D0080D99D /* BVAbvController.m in Sources */,
 				4BB9789F17614C6100D1D1E9 /* BVGravityTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Brett VanderHaar. All rights reserved.
 //
 
-#import "BVSecondViewController.h"
+#import "BVAbvController.h"
 
-@interface BVSecondViewController ()
+@interface BVAbvController ()
 
 @end
 
-@implementation BVSecondViewController
+@implementation BVAbvController
 
 - (void)viewDidLoad
 {

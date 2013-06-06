@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BVSpecificGravityController : UIViewController
+@interface BVSpecificGravityController : UIViewController <UITextFieldDelegate>
 
 @end

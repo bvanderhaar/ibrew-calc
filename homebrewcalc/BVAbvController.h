@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BVSecondViewController : UIViewController
+@interface BVAbvController : UIViewController
 
 @end
