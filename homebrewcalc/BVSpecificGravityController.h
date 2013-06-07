@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BVSpecificGravityController : UIViewController <UITextFieldDelegate>
-
+@property (strong, nonatomic) IBOutlet UITextField* originalGravity;
+@property (strong, nonatomic) IBOutlet UITextField* temperature;
 @end

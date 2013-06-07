@@ -25,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Gravity (OG)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQY-UG-q6C">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Gravity (OG)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQY-UG-q6C" customClass="BVGravityTextField">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="cFg-Yc-PPt"/>
                                 </constraints>
@@ -52,6 +52,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Specific Gravity" image="first" id="7"/>
+                    <connections>
+                        <outlet property="originalGravity" destination="FQY-UG-q6C" id="Be6-bY-V7i"/>
+                        <outlet property="temperature" destination="Cv7-xg-Kuw" id="Ulj-hY-6L9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,8 +191,18 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="BVAbvController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVAbvController.h"/>
+        </class>
         <class className="BVGravityTextField" superclassName="UITextField">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BVGravityTextField.h"/>
+        </class>
+        <class className="BVSpecificGravityController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVSpecificGravityController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
