@@ -72,6 +72,7 @@
     return YES;
 }
 
+//http://homebrew.stackexchange.com/questions/4137/temperature-correction-for-specific-gravity
 + (float) correctedSG: (float) specificGravity: (float) temp
 {
     float correction;
