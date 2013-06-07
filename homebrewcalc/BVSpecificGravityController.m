@@ -8,6 +8,12 @@
 
 #import "BVSpecificGravityController.h"
 #import "BVGravityTextField.h"
+#import "BVTemperatureTextField.h"
+
+#define A0 (1.313454)
+#define A1 (-0.132674)
+#define A2 (2.057793e-3)
+#define A3 (-2.627634e-6)
 
 @interface BVSpecificGravityController ()
 
@@ -30,21 +36,47 @@
 }
 
 
-- (void) textFieldDidBeginEditing:(BVGravityTextField *)textField
+- (void) textFieldDidBeginEditing:(UITextField *)textField
 {
-    if ([textField.text length] == 0)
-    {
-        NSLog(@"text field is empty");
-    }
     textField.placeholder = @"";
     NSLog(@"textFieldDidBeginEditing");
-
 }
 
-- (BOOL) textFieldShouldBeginEditing:(BVGravityTextField *)textField
+- (BOOL) textFieldShouldBeginEditing:(UITextField *)textField
 {
     NSLog(@"textFieldShouldBeginEditing");
     return YES;
+}
+
+- (BOOL) textFieldShouldEndEditing:(UITextField *)textField
+{
+    if ([textField.text length] == 0)
+    {
+        if ([textField isKindOfClass:[BVTemperatureTextField class]])
+        {
+            textField.placeholder = @"Temperature";
+        }
+        
+        if ([textField isKindOfClass:[BVGravityTextField class]])
+        {
+            textField.placeholder = @"Original Gravity";            
+        }
+        NSLog(@"text field is empty");
+    }
+    else
+    {
+        float gravity = [self.specificGravity.text floatValue];
+        float temperature = [self.temperature.text floatValue];
+        self.specificGravity.text = [NSString stringWithFormat:@"%f", [BVSpecificGravityController correctedSG: gravity: temperature]];
+    }
+    return YES;
+}
+
++ (float) correctedSG: (float) specificGravity: (float) temp
+{
+    float correction;
+    correction = A0 + A1*temp + A2*temp*temp + A3*temp*temp*temp;
+    return( specificGravity + (correction * 0.001) );
 }
 
 
