@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="width" constant="146" id="fTq-k1-Hdr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Gravity (OG)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQY-UG-q6C" customClass="BVGravityTextField">
                                 <constraints>
@@ -41,14 +41,14 @@
                         <constraints>
                             <constraint firstItem="FQY-UG-q6C" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" type="default" id="0A9-Rf-Qzv"/>
                             <constraint firstItem="sgl-rd-zNn" firstAttribute="leading" secondItem="FQY-UG-q6C" secondAttribute="leading" type="default" id="AJK-nK-VlL"/>
-                            <constraint firstItem="Cv7-xg-Kuw" firstAttribute="centerX" secondItem="FQY-UG-q6C" secondAttribute="centerX" type="default" id="HbX-EP-k30"/>
                             <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
                             <constraint firstItem="20" firstAttribute="top" secondItem="16" secondAttribute="top" constant="13" id="S9P-6N-n4h"/>
                             <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
                             <constraint firstItem="sgl-rd-zNn" firstAttribute="trailing" secondItem="FQY-UG-q6C" secondAttribute="trailing" type="default" id="YbH-rp-C0r"/>
-                            <constraint firstItem="sgl-rd-zNn" firstAttribute="top" secondItem="16" secondAttribute="top" constant="227" id="b6P-Ge-WIX"/>
                             <constraint firstItem="FQY-UG-q6C" firstAttribute="top" secondItem="16" secondAttribute="top" constant="71" id="faM-rQ-IEy"/>
+                            <constraint firstItem="sgl-rd-zNn" firstAttribute="top" secondItem="16" secondAttribute="top" constant="177" id="kG2-tn-rgL"/>
                             <constraint firstItem="Cv7-xg-Kuw" firstAttribute="top" secondItem="16" secondAttribute="top" constant="125" id="njC-eE-eEJ"/>
+                            <constraint firstItem="sgl-rd-zNn" firstAttribute="centerX" secondItem="Cv7-xg-Kuw" secondAttribute="centerX" type="default" id="oUB-QE-1Fl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Specific Gravity" image="first" id="7"/>
