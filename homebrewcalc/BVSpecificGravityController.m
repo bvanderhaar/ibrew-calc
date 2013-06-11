@@ -67,13 +67,13 @@
     {
         float gravity = [self.originalGravity.text floatValue];
         float temperature = [self.temperature.text floatValue];
-        self.specificGravity.text = [NSString stringWithFormat:@"%f", [BVSpecificGravityController correctedSG: gravity: temperature]];
+        self.specificGravity.text = [NSString stringWithFormat:@"%f", [self correctedSG: gravity: temperature]];
     }
     return YES;
 }
 
 //http://homebrew.stackexchange.com/questions/4137/temperature-correction-for-specific-gravity
-+ (float) correctedSG:(float)specificGravity :(float) temp
+- (float) correctedSG:(float)specificGravity :(float) temp
 {
     float correction;
     correction = A0 + A1*temp + A2*temp*temp + A3*temp*temp*temp;
