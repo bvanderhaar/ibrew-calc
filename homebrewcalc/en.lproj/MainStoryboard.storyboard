@@ -109,6 +109,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ABV %" image="second" id="6"/>
+                    <connections>
+                        <outlet property="abvPercentage" destination="9r8-bd-yAn" id="iIE-8E-Zx4"/>
+                        <outlet property="finalGravity" destination="KK7-zS-x1W" id="htv-yF-gIh"/>
+                        <outlet property="originalGravity" destination="pzb-bT-EfL" id="ecM-eX-Uxa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,6 +199,11 @@
     <classes>
         <class className="BVAbvController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BVAbvController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="abvPercentage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="finalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="BVGravityTextField" superclassName="UITextField">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BVGravityTextField.h"/>

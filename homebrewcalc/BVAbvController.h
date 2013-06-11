@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BVAbvController : UIViewController
-
+@interface BVAbvController : UIViewController <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UITextField* originalGravity;
+@property (strong, nonatomic) IBOutlet UITextField* finalGravity;
+@property (strong, nonatomic) IBOutlet UITextField* abvPercentage;
 @end
