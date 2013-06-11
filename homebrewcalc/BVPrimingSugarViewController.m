@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad
 {
+    self.temperature.delegate = self;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -24,6 +25,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL) textFieldShouldEndEditing:(UITextField *)textField
+{
+    float beerVolume = [self.beerVolume.text floatValue];
+    float co2Volume = [self.co2Volume.text floatValue];
+    float temperature = [self.temperature.text floatValue];
+    self.sugarAmount.text = [NSString stringWithFormat:@"%f", [self sugarAmountInGrams: beerVolume: co2Volume: temperature]];
+    return YES;
 }
 
 - (float)sugarAmountInGrams : (float) volume : (float) co2Volume : (float) temperature

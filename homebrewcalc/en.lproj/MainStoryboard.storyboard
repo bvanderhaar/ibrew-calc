@@ -151,21 +151,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temperature" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-Dy-NBh" customClass="BVTemperatureTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DR1-vB-Nbg" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="77" id="BJU-6X-hWI"/>
-                            <constraint firstItem="SDP-yJ-t6U" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="HcZ-b2-VVV"/>
-                            <constraint firstItem="SDP-yJ-t6U" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="198" id="LlK-JH-LU9"/>
+                            <constraint firstItem="SDP-yJ-t6U" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="218" id="Bf8-WX-kFa"/>
                             <constraint firstItem="GWI-Qd-Cl6" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="17" id="QMO-to-xtL"/>
-                            <constraint firstItem="S5K-GU-d3s" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="128" id="YNi-HA-ocX"/>
                             <constraint firstItem="DR1-vB-Nbg" firstAttribute="centerX" secondItem="GWI-Qd-Cl6" secondAttribute="centerX" type="default" id="es0-am-7Uj"/>
-                            <constraint firstItem="SDP-yJ-t6U" firstAttribute="leading" secondItem="S5K-GU-d3s" secondAttribute="leading" type="default" id="nZ6-4X-6S7"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="g5K-OK-ivu"/>
+                            <constraint firstItem="S5K-GU-d3s" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="121" id="ma5-Sq-qIp"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="trailing" secondItem="S5K-GU-d3s" secondAttribute="trailing" type="default" id="nYy-Hw-5Uy"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="trailing" secondItem="SDP-yJ-t6U" secondAttribute="trailing" type="default" id="qiD-NF-A3a"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="166" id="tgT-xh-Guc"/>
                             <constraint firstItem="S5K-GU-d3s" firstAttribute="centerX" secondItem="DR1-vB-Nbg" secondAttribute="centerX" type="default" id="tln-zR-V7h"/>
-                            <constraint firstItem="SDP-yJ-t6U" firstAttribute="trailing" secondItem="S5K-GU-d3s" secondAttribute="trailing" type="default" id="vsz-75-cd6"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="leading" secondItem="SDP-yJ-t6U" secondAttribute="leading" type="default" id="uXw-gk-PTK"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="leading" secondItem="S5K-GU-d3s" secondAttribute="leading" type="default" id="yUP-sQ-hfA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Priming Sugar" id="jEd-cx-lLr"/>
+                    <connections>
+                        <outlet property="beerVolume" destination="DR1-vB-Nbg" id="4ZR-7I-ukR"/>
+                        <outlet property="co2Volume" destination="S5K-GU-d3s" id="Lmr-k3-03R"/>
+                        <outlet property="sugarAmount" destination="SDP-yJ-t6U" id="QNF-wK-JPL"/>
+                        <outlet property="temperature" destination="Ybt-Dy-NBh" id="LBw-O7-og0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bj-8R-iKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,6 +223,12 @@
         </class>
         <class className="BVPrimingSugarViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BVPrimingSugarViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="beerVolume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="co2Volume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="sugarAmount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="temperature" candidateClass="BVTemperatureTextField"/>
+            </relationships>
         </class>
         <class className="BVSpecificGravityController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BVSpecificGravityController.h"/>

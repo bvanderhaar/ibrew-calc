@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BVPrimingSugarViewController : UIViewController
+@interface BVPrimingSugarViewController : UIViewController <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *beerVolume;
+@property (strong, nonatomic) IBOutlet UITextField *co2Volume;
+@property (strong, nonatomic) IBOutlet UITextField *temperature;
+@property (strong, nonatomic) IBOutlet UITextField *sugarAmount;
 
 @end
