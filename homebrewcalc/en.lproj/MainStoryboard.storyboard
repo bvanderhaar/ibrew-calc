@@ -138,14 +138,14 @@
                                     <constraint firstAttribute="width" constant="146" id="G1a-pY-1rf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Desired Volumes of CO2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5K-GU-d3s">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="MoF-EX-x4A"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sugar Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SDP-yJ-t6U">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -153,7 +153,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temperature" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-Dy-NBh" customClass="BVTemperatureTextField">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -227,7 +227,7 @@
                 <relationship kind="outlet" name="beerVolume" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="co2Volume" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="sugarAmount" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="temperature" candidateClass="BVTemperatureTextField"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="BVSpecificGravityController" superclassName="UIViewController">
