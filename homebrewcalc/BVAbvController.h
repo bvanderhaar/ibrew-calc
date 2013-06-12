@@ -11,5 +11,6 @@
 @interface BVAbvController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField* originalGravity;
 @property (strong, nonatomic) IBOutlet UITextField* finalGravity;
+- (IBAction)postToFacebook:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField* abvPercentage;
 @end

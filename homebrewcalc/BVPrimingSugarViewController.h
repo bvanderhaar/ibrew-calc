@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *co2Volume;
 @property (strong, nonatomic) IBOutlet UITextField *temperature;
 @property (strong, nonatomic) IBOutlet UITextField *sugarAmount;
+- (IBAction)postToFacebook:(id)sender;
 
 @end

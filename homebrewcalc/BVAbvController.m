@@ -7,6 +7,7 @@
 //
 
 #import "BVAbvController.h"
+#import <Social/Social.h>
 
 @interface BVAbvController ()
 
@@ -40,4 +41,16 @@
     return ((1.05 * (originalGravity - finalGravity)) / finalGravity) / 0.79 * 100;
 }
 
+- (IBAction)postToFacebook:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
+    {
+        SLComposeViewController* facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [facebookVC setInitialText:[self.originalGravity.text stringByAppendingString:@" original gravity on my new brew"]];
+        [self presentViewController:facebookVC animated:YES completion:NULL];
+    }
+    else
+    {
+        NSLog(@"no facebook available");
+    }
+}
 @end

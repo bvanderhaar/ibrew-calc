@@ -12,4 +12,5 @@
 @property (strong, nonatomic) IBOutlet UITextField* originalGravity;
 @property (strong, nonatomic) IBOutlet UITextField* temperature;
 @property (strong, nonatomic) IBOutlet UITextField* specificGravity;
+- (IBAction)postToFacebook:(id)sender;
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B56E8EB17615C3500FE99A8 /* BVTemperatureTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B56E8EA17615C3500FE99A8 /* BVTemperatureTextField.m */; };
 		4B56E8EE1767D9A800FE99A8 /* BVPrimingSugarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B56E8ED1767D9A800FE99A8 /* BVPrimingSugarViewController.m */; };
+		4B56E8F01767F24300FE99A8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B56E8EF1767F24300FE99A8 /* Social.framework */; };
 		4BB9789F17614C6100D1D1E9 /* BVGravityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9789E17614C6100D1D1E9 /* BVGravityTextField.m */; };
 		C901A122175EAA7D0080D99D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C901A121175EAA7D0080D99D /* UIKit.framework */; };
 		C901A124175EAA7D0080D99D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C901A123175EAA7D0080D99D /* Foundation.framework */; };
@@ -33,6 +34,7 @@
 		4B56E8EA17615C3500FE99A8 /* BVTemperatureTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BVTemperatureTextField.m; path = ../BVTemperatureTextField.m; sourceTree = "<group>"; };
 		4B56E8EC1767D9A800FE99A8 /* BVPrimingSugarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVPrimingSugarViewController.h; sourceTree = "<group>"; };
 		4B56E8ED1767D9A800FE99A8 /* BVPrimingSugarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVPrimingSugarViewController.m; sourceTree = "<group>"; };
+		4B56E8EF1767F24300FE99A8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4BB9789D17614C6100D1D1E9 /* BVGravityTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVGravityTextField.h; sourceTree = "<group>"; };
 		4BB9789E17614C6100D1D1E9 /* BVGravityTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVGravityTextField.m; sourceTree = "<group>"; };
 		C901A11E175EAA7D0080D99D /* homebrewcalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homebrewcalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B56E8F01767F24300FE99A8 /* Social.framework in Frameworks */,
 				C901A122175EAA7D0080D99D /* UIKit.framework in Frameworks */,
 				C901A124175EAA7D0080D99D /* Foundation.framework in Frameworks */,
 				C901A126175EAA7D0080D99D /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		C901A115175EAA7D0080D99D = {
 			isa = PBXGroup;
 			children = (
+				4B56E8EF1767F24300FE99A8 /* Social.framework */,
 				C901A127175EAA7D0080D99D /* homebrewcalc */,
 				C901A120175EAA7D0080D99D /* Frameworks */,
 				C901A11F175EAA7D0080D99D /* Products */,

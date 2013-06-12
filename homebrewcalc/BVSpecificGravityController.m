@@ -9,6 +9,7 @@
 #import "BVSpecificGravityController.h"
 #import "BVGravityTextField.h"
 #import "BVTemperatureTextField.h"
+#import <Social/Social.h>
 
 #define A0 (1.313454)
 #define A1 (-0.132674)
@@ -80,5 +81,18 @@
     return( specificGravity + (correction * 0.001) );
 }
 
+- (IBAction)postToFacebook:(id)sender
+{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
+    {
+        SLComposeViewController* facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [facebookVC setInitialText:[self.originalGravity.text stringByAppendingString:@" original gravity on my new brew"]];
+        [self presentViewController:facebookVC animated:YES completion:NULL];
+    }
+    else
+    {
+        NSLog(@"no facebook available");
+    }
+}
 
 @end
