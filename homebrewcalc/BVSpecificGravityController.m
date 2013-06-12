@@ -96,7 +96,7 @@
 }
 
 - (IBAction)findRecipes:(id)sender {
-    NSString *stringURL = @"http://wiki.akosma.com/";
+    NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
 }

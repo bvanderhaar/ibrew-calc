@@ -85,7 +85,6 @@
                     <tabBarItem key="tabBarItem" title="Specific Gravity" image="first" id="7"/>
                     <connections>
                         <outlet property="originalGravity" destination="FQY-UG-q6C" id="Be6-bY-V7i"/>
-                        <outlet property="postToFacebook" destination="b4D-Hg-OvQ" id="Pca-3o-dzP"/>
                         <outlet property="specificGravity" destination="sgl-rd-zNn" id="Gh1-N0-KeE"/>
                         <outlet property="temperature" destination="Cv7-xg-Kuw" id="Ulj-hY-6L9"/>
                     </connections>
