@@ -13,4 +13,5 @@
 @property (strong, nonatomic) IBOutlet UITextField* finalGravity;
 - (IBAction)postToFacebook:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField* abvPercentage;
+- (IBAction)findRecipes:(id)sender;
 @end

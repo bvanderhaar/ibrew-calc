@@ -49,18 +49,34 @@
                                     <action selector="postToFacebook:" destination="2" eventType="touchUpInside" id="wWC-aN-gcG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQi-nk-6uF">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Find Recipes">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findRecipes:" destination="2" eventType="touchUpInside" id="qAl-dU-AWP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Cv7-xg-Kuw" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" type="default" id="1U7-dR-vnD"/>
                             <constraint firstItem="Cv7-xg-Kuw" firstAttribute="centerX" secondItem="FQY-UG-q6C" secondAttribute="centerX" type="default" id="367-o0-Qi3"/>
                             <constraint firstItem="sgl-rd-zNn" firstAttribute="leading" secondItem="FQY-UG-q6C" secondAttribute="leading" type="default" id="AJK-nK-VlL"/>
-                            <constraint firstAttribute="bottom" secondItem="b4D-Hg-OvQ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="J3w-C9-W0c"/>
+                            <constraint firstAttribute="bottom" secondItem="lQi-nk-6uF" secondAttribute="bottom" constant="30" id="Ccu-4U-NuG"/>
+                            <constraint firstItem="b4D-Hg-OvQ" firstAttribute="trailing" secondItem="lQi-nk-6uF" secondAttribute="trailing" type="default" id="Jb5-WN-Wtt"/>
                             <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
+                            <constraint firstItem="lQi-nk-6uF" firstAttribute="leading" secondItem="Cv7-xg-Kuw" secondAttribute="leading" type="default" id="RuQ-wv-bqA"/>
                             <constraint firstItem="20" firstAttribute="top" secondItem="16" secondAttribute="top" constant="13" id="S9P-6N-n4h"/>
+                            <constraint firstItem="FQY-UG-q6C" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" type="default" id="T7f-3g-g89"/>
                             <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
                             <constraint firstItem="sgl-rd-zNn" firstAttribute="top" secondItem="16" secondAttribute="top" constant="163" id="VdH-SH-irS"/>
                             <constraint firstItem="sgl-rd-zNn" firstAttribute="trailing" secondItem="FQY-UG-q6C" secondAttribute="trailing" type="default" id="YbH-rp-C0r"/>
+                            <constraint firstItem="lQi-nk-6uF" firstAttribute="top" secondItem="b4D-Hg-OvQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cpH-yQ-t83"/>
                             <constraint firstItem="Cv7-xg-Kuw" firstAttribute="top" secondItem="16" secondAttribute="top" constant="117" id="d5P-y9-cD1"/>
                             <constraint firstItem="FQY-UG-q6C" firstAttribute="top" secondItem="16" secondAttribute="top" constant="71" id="faM-rQ-IEy"/>
                             <constraint firstItem="b4D-Hg-OvQ" firstAttribute="centerX" secondItem="sgl-rd-zNn" secondAttribute="centerX" type="default" id="zak-KI-YQT"/>
@@ -123,17 +139,33 @@
                                     <action selector="postToFacebook:" destination="3" eventType="touchUpInside" id="aX3-w8-5th"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sC-LD-63H">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Find Recipes">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findRecipes:" destination="3" eventType="touchUpInside" id="vZ6-Q4-zVj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3ig-q8-qkc"/>
-                            <constraint firstAttribute="bottom" secondItem="lgJ-4a-Dwy" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="84l-nq-fJ2"/>
                             <constraint firstItem="9r8-bd-yAn" firstAttribute="top" secondItem="17" secondAttribute="top" constant="152" id="Baf-9j-yri"/>
+                            <constraint firstItem="7sC-LD-63H" firstAttribute="trailing" secondItem="9r8-bd-yAn" secondAttribute="trailing" type="default" id="DRt-ea-dLM"/>
                             <constraint firstItem="9r8-bd-yAn" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" type="default" id="GQZ-dP-Dqc"/>
                             <constraint firstItem="KK7-zS-x1W" firstAttribute="trailing" secondItem="pzb-bT-EfL" secondAttribute="trailing" type="default" id="J8x-o2-tqt"/>
                             <constraint firstItem="KK7-zS-x1W" firstAttribute="top" secondItem="pzb-bT-EfL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="M0M-U5-Iu8"/>
-                            <constraint firstItem="lgJ-4a-Dwy" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="90" id="V1X-gW-bjn"/>
+                            <constraint firstItem="7sC-LD-63H" firstAttribute="leading" secondItem="lgJ-4a-Dwy" secondAttribute="leading" type="default" id="VzM-XX-ZBp"/>
+                            <constraint firstItem="7sC-LD-63H" firstAttribute="top" secondItem="lgJ-4a-Dwy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XMd-Mr-ply"/>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="centerX" secondItem="22" secondAttribute="centerX" type="default" id="dGn-6b-9eu"/>
+                            <constraint firstAttribute="bottom" secondItem="7sC-LD-63H" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ezZ-7r-P6f"/>
+                            <constraint firstItem="lgJ-4a-Dwy" firstAttribute="centerX" secondItem="9r8-bd-yAn" secondAttribute="centerX" type="default" id="jLj-4a-o1E"/>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="leading" secondItem="KK7-zS-x1W" secondAttribute="leading" type="default" id="pCD-uQ-v5r"/>
                             <constraint firstItem="22" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="sGz-zb-ehC"/>
                             <constraint firstItem="9r8-bd-yAn" firstAttribute="centerX" secondItem="KK7-zS-x1W" secondAttribute="centerX" type="default" id="xw8-rl-jJo"/>
@@ -199,15 +231,30 @@
                                     <action selector="postToFacebook:" destination="772-C0-FwF" eventType="touchUpInside" id="8Jh-Rr-pn2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywo-nG-JgM">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Find Recipes">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findRecipes:" destination="772-C0-FwF" eventType="touchUpInside" id="pvF-wN-ANY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DR1-vB-Nbg" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="77" id="BJU-6X-hWI"/>
                             <constraint firstItem="SDP-yJ-t6U" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="218" id="Bf8-WX-kFa"/>
+                            <constraint firstAttribute="bottom" secondItem="nj2-jG-KxB" secondAttribute="bottom" constant="73" id="JYo-hk-FP2"/>
                             <constraint firstItem="GWI-Qd-Cl6" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="17" id="QMO-to-xtL"/>
+                            <constraint firstAttribute="bottom" secondItem="ywo-nG-JgM" secondAttribute="bottom" constant="13" id="R04-4m-xbk"/>
+                            <constraint firstItem="ywo-nG-JgM" firstAttribute="leading" secondItem="nj2-jG-KxB" secondAttribute="leading" type="default" id="dOV-NK-hvG"/>
                             <constraint firstItem="DR1-vB-Nbg" firstAttribute="centerX" secondItem="GWI-Qd-Cl6" secondAttribute="centerX" type="default" id="es0-am-7Uj"/>
-                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="g5K-OK-ivu"/>
-                            <constraint firstAttribute="bottom" secondItem="nj2-jG-KxB" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="lfp-q7-q5Y"/>
+                            <constraint firstItem="ywo-nG-JgM" firstAttribute="trailing" secondItem="DR1-vB-Nbg" secondAttribute="trailing" type="default" id="kXH-gP-LNo"/>
                             <constraint firstItem="S5K-GU-d3s" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="121" id="ma5-Sq-qIp"/>
                             <constraint firstItem="Ybt-Dy-NBh" firstAttribute="trailing" secondItem="S5K-GU-d3s" secondAttribute="trailing" type="default" id="nYy-Hw-5Uy"/>
                             <constraint firstItem="Ybt-Dy-NBh" firstAttribute="trailing" secondItem="SDP-yJ-t6U" secondAttribute="trailing" type="default" id="qiD-NF-A3a"/>
@@ -216,6 +263,7 @@
                             <constraint firstItem="S5K-GU-d3s" firstAttribute="centerX" secondItem="DR1-vB-Nbg" secondAttribute="centerX" type="default" id="tln-zR-V7h"/>
                             <constraint firstItem="Ybt-Dy-NBh" firstAttribute="leading" secondItem="SDP-yJ-t6U" secondAttribute="leading" type="default" id="uXw-gk-PTK"/>
                             <constraint firstItem="Ybt-Dy-NBh" firstAttribute="leading" secondItem="S5K-GU-d3s" secondAttribute="leading" type="default" id="yUP-sQ-hfA"/>
+                            <constraint firstItem="nj2-jG-KxB" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="yr7-Jv-5Ar"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Priming Sugar" id="jEd-cx-lLr"/>
@@ -255,6 +303,48 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="BVAbvController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVAbvController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="outlet" name="abvPercentage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="finalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVGravityTextField" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVGravityTextField.h"/>
+        </class>
+        <class className="BVPrimingSugarViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVPrimingSugarViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="outlet" name="beerVolume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="co2Volume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="sugarAmount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVSpecificGravityController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVSpecificGravityController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="specificGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVTemperatureTextField" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVTemperatureTextField.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

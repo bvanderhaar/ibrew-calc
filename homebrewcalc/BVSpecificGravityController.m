@@ -95,4 +95,10 @@
     }
 }
 
+- (IBAction)findRecipes:(id)sender {
+    NSString *stringURL = @"http://wiki.akosma.com/";
+    NSURL *url = [NSURL URLWithString:stringURL];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
 @end

@@ -53,4 +53,6 @@
         NSLog(@"no facebook available");
     }
 }
+- (IBAction)findRecipes:(id)sender {
+}
 @end
