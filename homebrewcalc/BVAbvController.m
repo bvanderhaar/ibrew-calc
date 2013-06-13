@@ -28,13 +28,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) textFieldDidBeginEditing:(UITextField *)textField
+{
+    textField.placeholder = @"";
+}
+
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
 {
-    float gravity = [self.originalGravity.text floatValue];
-    float finalGravity = [self.finalGravity.text floatValue];
-    //[NSString stringWithFormat:@"%.02f%%",someFloat]
-    self.abvPercentage.text = [NSString stringWithFormat:@"%.02f%%", [self abv: gravity: finalGravity]];
-    [textField resignFirstResponder];
+    if ([self.originalGravity.text length] == 0)
+    {
+        self.originalGravity.placeholder = @"Original Gravity (OG)";
+    }
+    else if ([self.finalGravity.text length] == 0)
+    {
+        self.finalGravity.placeholder =  @"Final Gravity (FG)";
+    }
+    else
+    {
+        float gravity = [self.originalGravity.text floatValue];
+        float finalGravity = [self.finalGravity.text floatValue];
+        self.abvPercentage.text = [NSString stringWithFormat:@"%.02f%%", [self abv: gravity: finalGravity]];
+    }
     return YES;
 }
 

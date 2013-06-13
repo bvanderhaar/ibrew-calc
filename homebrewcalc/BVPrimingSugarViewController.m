@@ -28,6 +28,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) textFieldDidBeginEditing:(UITextField *)textField
+{
+    textField.placeholder = @"";
+}
+
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
 {
     float beerVolume = [self.beerVolume.text floatValue];

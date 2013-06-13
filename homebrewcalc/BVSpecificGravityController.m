@@ -51,27 +51,20 @@
 
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
 {
-    if ([textField.text length] == 0)
+    if ([self.temperature.text length] == 0)
     {
-        if ([textField isKindOfClass:[BVTemperatureTextField class]])
-        {
-            textField.placeholder = @"Temperature";
-            [textField resignFirstResponder];
-        }
-        
-        if ([textField isKindOfClass:[BVGravityTextField class]])
-        {
-            textField.placeholder = @"Original Gravity";            
-        }
-        NSLog(@"text field is empty");
+        self.temperature.placeholder = @"Temp";
+    }
+    else if ([self.originalGravity.text length] == 0)
+    {
+        self.originalGravity.text = @"Original Gravity (OG)";
     }
     else
     {
         float gravity = [self.originalGravity.text floatValue];
         float temperature = [self.temperature.text floatValue];
-        self.specificGravity.text = [NSString stringWithFormat:@"%f", [self correctedSG: gravity: temperature]];
+        self.specificGravity.text = [NSString stringWithFormat:@"%.3f", [self correctedSG: gravity: temperature]];
     }
-    [textField resignFirstResponder];
     return YES;
 }
 
