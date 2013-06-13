@@ -64,10 +64,6 @@
         [facebookVC setInitialText:[self.originalGravity.text stringByAppendingString:@" original gravity on my new brew"]];
         [self presentViewController:facebookVC animated:YES completion:NULL];
     }
-    else
-    {
-        NSLog(@"no facebook available");
-    }
 }
 - (IBAction)findRecipes:(id)sender {
     NSString *stringURL = @"http://beersmithrecipes.com/";

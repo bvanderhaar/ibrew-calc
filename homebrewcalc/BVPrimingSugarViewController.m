@@ -47,7 +47,7 @@
     
     if ([self.co2Volume.text length] == 0)
     {
-        self.co2Volume.placeholder = @"Desired Volumes of CO\u2082";
+        self.co2Volume.placeholder = @"Volumes of CO\u2082";
     }
     
     float beerVolume = [self.beerVolume.text floatValue];
@@ -68,10 +68,6 @@
         SLComposeViewController* facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         [facebookVC setInitialText:[self.beerVolume.text stringByAppendingString:@" gallons of beer of my new brew being bottled"]];
         [self presentViewController:facebookVC animated:YES completion:NULL];
-    }
-    else
-    {
-        NSLog(@"no facebook available");
     }
 }
 

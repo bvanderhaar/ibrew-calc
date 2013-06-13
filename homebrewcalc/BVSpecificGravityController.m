@@ -7,8 +7,6 @@
 //
 
 #import "BVSpecificGravityController.h"
-#import "BVGravityTextField.h"
-#import "BVTemperatureTextField.h"
 #import <Social/Social.h>
 
 #define A0 (1.313454)
@@ -40,12 +38,6 @@
 - (void) textFieldDidBeginEditing:(UITextField *)textField
 {
     textField.placeholder = @"";
-}
-
-- (BOOL) textFieldShouldBeginEditing:(UITextField *)textField
-{
-    NSLog(@"textFieldShouldBeginEditing");
-    return YES;
 }
 
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
@@ -82,10 +74,6 @@
         SLComposeViewController* facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         [facebookVC setInitialText:[self.originalGravity.text stringByAppendingString:@" original gravity on my new brew"]];
         [self presentViewController:facebookVC animated:YES completion:NULL];
-    }
-    else
-    {
-        NSLog(@"no facebook available");
     }
 }
 
