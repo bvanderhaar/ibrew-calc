@@ -35,6 +35,21 @@
 
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
 {
+    if ([self.beerVolume.text length] == 0)
+    {
+        self.beerVolume.placeholder = @"Yield in Gallons";
+    }
+    
+    if ([self.temperature.text length] == 0)
+    {
+        self.temperature.placeholder = @"Temp";
+    }
+    
+    if ([self.co2Volume.text length] == 0)
+    {
+        self.co2Volume.placeholder = @"Desired Volumes of CO2";
+    }
+    
     float beerVolume = [self.beerVolume.text floatValue];
     float co2Volume = [self.co2Volume.text floatValue];
     float temperature = [self.temperature.text floatValue];

@@ -40,7 +40,6 @@
 - (void) textFieldDidBeginEditing:(UITextField *)textField
 {
     textField.placeholder = @"";
-    NSLog(@"textFieldDidBeginEditing");
 }
 
 - (BOOL) textFieldShouldBeginEditing:(UITextField *)textField
@@ -51,13 +50,14 @@
 
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
 {
+    if ([self.originalGravity.text length] == 0)
+    {
+        self.originalGravity.placeholder = @"Original Gravity (OG)";
+    }
+    
     if ([self.temperature.text length] == 0)
     {
         self.temperature.placeholder = @"Temp";
-    }
-    else if ([self.originalGravity.text length] == 0)
-    {
-        self.originalGravity.text = @"Original Gravity (OG)";
     }
     else
     {
