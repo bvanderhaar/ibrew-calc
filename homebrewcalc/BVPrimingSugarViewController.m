@@ -47,7 +47,7 @@
     
     if ([self.co2Volume.text length] == 0)
     {
-        self.co2Volume.placeholder = @"Desired Volumes of CO2";
+        self.co2Volume.placeholder = @"Desired Volumes of CO\u2082";
     }
     
     float beerVolume = [self.beerVolume.text floatValue];

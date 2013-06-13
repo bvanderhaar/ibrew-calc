@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -18,7 +18,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Cv7-xg-Kuw" customClass="BVTemperatureTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Cv7-xg-Kuw">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="86" id="TuK-RY-7j2"/>
                                     <constraint firstAttribute="height" constant="30" id="i4E-HY-qwt"/>
@@ -26,7 +26,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Gravity (OG)" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FQY-UG-q6C" customClass="BVGravityTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Gravity (OG)" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FQY-UG-q6C">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="cFg-Yc-PPt"/>
                                 </constraints>
@@ -121,14 +121,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Gravity (OG)" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-bT-EfL" customClass="BVGravityTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Gravity (OG)" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-bT-EfL">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="9YR-Or-oD8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Final Gravity (FG)" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KK7-zS-x1W" customClass="BVGravityTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Final Gravity (FG)" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KK7-zS-x1W">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
@@ -216,18 +216,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Desired Volumes of CO2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5K-GU-d3s">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="201" id="MoF-EX-x4A"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Volumes of CO₂" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="S5K-GU-d3s">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sugar Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SDP-yJ-t6U">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="CWY-5E-bnP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-Dy-NBh" customClass="BVTemperatureTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sugar Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TpM-YM-uZb">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-Dy-NBh">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="92" id="WfE-Vc-Cnz"/>
                                 </constraints>
@@ -260,7 +264,12 @@
                                     <action selector="findRecipes:" destination="772-C0-FwF" eventType="touchUpInside" id="pvF-wN-ANY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRC-eN-9b3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Grams" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRC-eN-9b3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ounces" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rZ-AF-EoG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -273,26 +282,32 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zRC-eN-9b3" firstAttribute="bottom" secondItem="SDP-yJ-t6U" secondAttribute="bottom" type="default" id="0fG-hM-r5P"/>
                             <constraint firstItem="zRC-eN-9b3" firstAttribute="baseline" secondItem="SDP-yJ-t6U" secondAttribute="baseline" type="default" id="2WZ-Th-79W"/>
-                            <constraint firstAttribute="trailing" secondItem="CEQ-f7-T0O" secondAttribute="trailing" constant="98" id="5GS-Hd-iXJ"/>
-                            <constraint firstAttribute="trailing" secondItem="zRC-eN-9b3" secondAttribute="trailing" constant="15" id="7mO-Bj-FgB"/>
+                            <constraint firstItem="TpM-YM-uZb" firstAttribute="bottom" secondItem="8rZ-AF-EoG" secondAttribute="bottom" type="default" id="6I5-Jh-WMO"/>
                             <constraint firstItem="SDP-yJ-t6U" firstAttribute="leading" secondItem="S5K-GU-d3s" secondAttribute="leading" type="default" id="98S-KW-cLR"/>
-                            <constraint firstItem="nj2-jG-KxB" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="AG2-8t-s2L"/>
+                            <constraint firstItem="S5K-GU-d3s" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="A5H-dS-AIb"/>
                             <constraint firstItem="DR1-vB-Nbg" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="77" id="BJU-6X-hWI"/>
                             <constraint firstItem="SDP-yJ-t6U" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="218" id="Bf8-WX-kFa"/>
-                            <constraint firstItem="SDP-yJ-t6U" firstAttribute="trailing" secondItem="S5K-GU-d3s" secondAttribute="trailing" type="default" id="CqQ-Lm-rar"/>
+                            <constraint firstItem="SDP-yJ-t6U" firstAttribute="leading" secondItem="aJq-cq-zXr" secondAttribute="leading" constant="60" id="DtZ-DZ-hRf"/>
                             <constraint firstAttribute="bottom" secondItem="nj2-jG-KxB" secondAttribute="bottom" constant="73" id="JYo-hk-FP2"/>
+                            <constraint firstItem="TpM-YM-uZb" firstAttribute="trailing" secondItem="SDP-yJ-t6U" secondAttribute="trailing" type="default" id="Lsv-gB-d9H"/>
+                            <constraint firstItem="TpM-YM-uZb" firstAttribute="leading" secondItem="SDP-yJ-t6U" secondAttribute="leading" type="default" id="MpS-sU-7KO"/>
+                            <constraint firstAttribute="bottom" secondItem="TpM-YM-uZb" secondAttribute="bottom" constant="218" id="NNL-Zx-OHj"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="baseline" secondItem="CEQ-f7-T0O" secondAttribute="baseline" type="default" id="Ojj-Og-GIf"/>
                             <constraint firstItem="GWI-Qd-Cl6" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="17" id="QMO-to-xtL"/>
                             <constraint firstAttribute="bottom" secondItem="ywo-nG-JgM" secondAttribute="bottom" constant="13" id="R04-4m-xbk"/>
-                            <constraint firstItem="CEQ-f7-T0O" firstAttribute="top" secondItem="Ybt-Dy-NBh" secondAttribute="top" type="default" id="VBs-c0-dbd"/>
+                            <constraint firstItem="S5K-GU-d3s" firstAttribute="centerX" secondItem="nj2-jG-KxB" secondAttribute="centerX" type="default" id="bQg-Vf-6Aq"/>
                             <constraint firstItem="ywo-nG-JgM" firstAttribute="leading" secondItem="nj2-jG-KxB" secondAttribute="leading" type="default" id="dOV-NK-hvG"/>
                             <constraint firstItem="DR1-vB-Nbg" firstAttribute="centerX" secondItem="GWI-Qd-Cl6" secondAttribute="centerX" type="default" id="es0-am-7Uj"/>
                             <constraint firstItem="Ybt-Dy-NBh" firstAttribute="leading" secondItem="aJq-cq-zXr" secondAttribute="leading" constant="92" id="fB6-Rh-VSd"/>
+                            <constraint firstItem="8rZ-AF-EoG" firstAttribute="leading" secondItem="zRC-eN-9b3" secondAttribute="leading" type="default" id="fZ3-hQ-wuO"/>
+                            <constraint firstAttribute="trailing" secondItem="8rZ-AF-EoG" secondAttribute="trailing" constant="30" id="gaO-XE-qs2"/>
                             <constraint firstItem="ywo-nG-JgM" firstAttribute="trailing" secondItem="DR1-vB-Nbg" secondAttribute="trailing" type="default" id="kXH-gP-LNo"/>
                             <constraint firstItem="S5K-GU-d3s" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="121" id="ma5-Sq-qIp"/>
-                            <constraint firstItem="nj2-jG-KxB" firstAttribute="centerX" secondItem="SDP-yJ-t6U" secondAttribute="centerX" type="default" id="sCZ-lL-2ug"/>
                             <constraint firstItem="Ybt-Dy-NBh" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="166" id="tgT-xh-Guc"/>
                             <constraint firstItem="S5K-GU-d3s" firstAttribute="centerX" secondItem="DR1-vB-Nbg" secondAttribute="centerX" type="default" id="tln-zR-V7h"/>
+                            <constraint firstItem="CEQ-f7-T0O" firstAttribute="trailing" secondItem="SDP-yJ-t6U" secondAttribute="trailing" type="default" id="z8F-VX-ekc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Priming Sugar" id="jEd-cx-lLr"/>
@@ -306,6 +321,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bj-8R-iKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="1162"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZB9-Gi-9h2">
+            <objects>
+                <viewController id="0tF-pl-jNq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x15-Nk-EyZ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="u1n-Sf-dV0">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="r4o-TH-zv0">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u1n-Sf-dV0" firstAttribute="trailing" secondItem="x15-Nk-EyZ" secondAttribute="trailing" type="default" id="2ch-nm-bsv"/>
+                            <constraint firstItem="u1n-Sf-dV0" firstAttribute="top" secondItem="x15-Nk-EyZ" secondAttribute="top" type="default" id="EvP-0Y-Lbo"/>
+                            <constraint firstItem="u1n-Sf-dV0" firstAttribute="leading" secondItem="x15-Nk-EyZ" secondAttribute="leading" type="default" id="Svg-HI-Z2Y"/>
+                            <constraint firstItem="u1n-Sf-dV0" firstAttribute="bottom" secondItem="x15-Nk-EyZ" secondAttribute="bottom" type="default" id="qYc-CQ-hQL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0f-Jx-Ggw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1842"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -332,6 +383,42 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="BVAbvController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVAbvController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="outlet" name="abvPercentage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="finalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVPrimingSugarViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVPrimingSugarViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="outlet" name="beerVolume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="co2Volume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="sugarAmount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVSpecificGravityController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVSpecificGravityController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="specificGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
