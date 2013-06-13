@@ -56,6 +56,7 @@
         if ([textField isKindOfClass:[BVTemperatureTextField class]])
         {
             textField.placeholder = @"Temperature";
+            [textField resignFirstResponder];
         }
         
         if ([textField isKindOfClass:[BVGravityTextField class]])
@@ -70,6 +71,7 @@
         float temperature = [self.temperature.text floatValue];
         self.specificGravity.text = [NSString stringWithFormat:@"%f", [self correctedSG: gravity: temperature]];
     }
+    [textField resignFirstResponder];
     return YES;
 }
 
@@ -98,6 +100,15 @@
     NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([self.temperature isFirstResponder] && [touch view] != self.temperature) {
+        [self.temperature resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
 }
 
 @end

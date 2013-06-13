@@ -34,6 +34,7 @@
     float finalGravity = [self.finalGravity.text floatValue];
     //[NSString stringWithFormat:@"%.02f%%",someFloat]
     self.abvPercentage.text = [NSString stringWithFormat:@"%.02f%%", [self abv: gravity: finalGravity]];
+    [textField resignFirstResponder];
     return YES;
 }
 
@@ -58,5 +59,14 @@
     NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([self.finalGravity isFirstResponder] && [touch view] != self.finalGravity) {
+        [self.finalGravity  resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
 }
 @end
