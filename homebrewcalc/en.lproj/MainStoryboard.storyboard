@@ -134,13 +134,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ABV %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9r8-bd-yAn">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="146" id="MZQ-cS-9i1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-4a-Dwy">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Post to Facebook">
@@ -155,6 +148,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sC-LD-63H">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="9gg-7C-OtV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Find Recipes">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -167,28 +163,36 @@
                                     <action selector="findRecipes:" destination="3" eventType="touchUpInside" id="vZ6-Q4-zVj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pB-Sq-Z6H">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="80l-2h-GJq"/>
+                                    <constraint firstAttribute="width" constant="216" id="ZxV-yU-fNe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3ig-q8-qkc"/>
-                            <constraint firstItem="9r8-bd-yAn" firstAttribute="top" secondItem="17" secondAttribute="top" constant="152" id="Baf-9j-yri"/>
-                            <constraint firstItem="7sC-LD-63H" firstAttribute="trailing" secondItem="9r8-bd-yAn" secondAttribute="trailing" type="default" id="DRt-ea-dLM"/>
-                            <constraint firstItem="9r8-bd-yAn" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" type="default" id="GQZ-dP-Dqc"/>
+                            <constraint firstItem="0pB-Sq-Z6H" firstAttribute="centerX" secondItem="7sC-LD-63H" secondAttribute="centerX" type="default" id="64R-fw-Snr"/>
                             <constraint firstItem="KK7-zS-x1W" firstAttribute="trailing" secondItem="pzb-bT-EfL" secondAttribute="trailing" type="default" id="J8x-o2-tqt"/>
                             <constraint firstItem="KK7-zS-x1W" firstAttribute="top" secondItem="pzb-bT-EfL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="M0M-U5-Iu8"/>
                             <constraint firstItem="7sC-LD-63H" firstAttribute="leading" secondItem="lgJ-4a-Dwy" secondAttribute="leading" type="default" id="VzM-XX-ZBp"/>
                             <constraint firstItem="7sC-LD-63H" firstAttribute="top" secondItem="lgJ-4a-Dwy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XMd-Mr-ply"/>
+                            <constraint firstItem="lgJ-4a-Dwy" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" type="default" id="Y4t-q8-3Mm"/>
+                            <constraint firstItem="lgJ-4a-Dwy" firstAttribute="centerX" secondItem="KK7-zS-x1W" secondAttribute="centerX" type="default" id="bvI-OY-qfX"/>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="centerX" secondItem="22" secondAttribute="centerX" type="default" id="dGn-6b-9eu"/>
                             <constraint firstAttribute="bottom" secondItem="7sC-LD-63H" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ezZ-7r-P6f"/>
-                            <constraint firstItem="lgJ-4a-Dwy" firstAttribute="centerX" secondItem="9r8-bd-yAn" secondAttribute="centerX" type="default" id="jLj-4a-o1E"/>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="leading" secondItem="KK7-zS-x1W" secondAttribute="leading" type="default" id="pCD-uQ-v5r"/>
                             <constraint firstItem="22" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="sGz-zb-ehC"/>
-                            <constraint firstItem="9r8-bd-yAn" firstAttribute="centerX" secondItem="KK7-zS-x1W" secondAttribute="centerX" type="default" id="xw8-rl-jJo"/>
+                            <constraint firstItem="0pB-Sq-Z6H" firstAttribute="top" secondItem="KK7-zS-x1W" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="u6A-BT-GFD"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ABV %" image="second" id="6"/>
                     <connections>
-                        <outlet property="abvPercentage" destination="9r8-bd-yAn" id="iIE-8E-Zx4"/>
+                        <outlet property="abvLabel" destination="0pB-Sq-Z6H" id="8gI-5g-qjU"/>
                         <outlet property="finalGravity" destination="KK7-zS-x1W" id="htv-yF-gIh"/>
                         <outlet property="originalGravity" destination="pzb-bT-EfL" id="ecM-eX-Uxa"/>
                     </connections>
@@ -391,7 +395,7 @@
             <relationships>
                 <relationship kind="action" name="findRecipes:"/>
                 <relationship kind="action" name="postToFacebook:"/>
-                <relationship kind="outlet" name="abvPercentage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="abvLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="finalGravity" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
             </relationships>

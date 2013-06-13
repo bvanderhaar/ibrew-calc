@@ -45,11 +45,17 @@
     }
     else
     {
-        float gravity = [self.originalGravity.text floatValue];
-        float finalGravity = [self.finalGravity.text floatValue];
-        self.abvPercentage.text = [NSString stringWithFormat:@"%.02f%%", [self abv: gravity: finalGravity]];
+        [self updateAbvPercentage];
     }
+    [self.finalGravity resignFirstResponder];
     return YES;
+}
+
+- (void) updateAbvPercentage
+{
+    float gravity = [self.originalGravity.text floatValue];
+    float finalGravity = [self.finalGravity.text floatValue];
+    self.abvLabel.text = [NSString stringWithFormat:@"%.02f%%", [self abv: gravity: finalGravity]];
 }
 
 - (float) abv: (float) originalGravity : (float) finalGravity
@@ -75,7 +81,7 @@
     
     UITouch *touch = [[event allTouches] anyObject];
     if ([self.finalGravity isFirstResponder] && [touch view] != self.finalGravity) {
-        [self.finalGravity  resignFirstResponder];
+        [self.finalGravity resignFirstResponder];
     }
     [super touchesBegan:touches withEvent:event];
 }
