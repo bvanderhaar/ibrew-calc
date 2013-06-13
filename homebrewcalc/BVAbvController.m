@@ -32,7 +32,8 @@
 {
     float gravity = [self.originalGravity.text floatValue];
     float finalGravity = [self.finalGravity.text floatValue];
-    self.abvPercentage.text = [NSString stringWithFormat:@"%f", [self abv: gravity: finalGravity]];
+    //[NSString stringWithFormat:@"%.02f%%",someFloat]
+    self.abvPercentage.text = [NSString stringWithFormat:@"%.02f%%", [self abv: gravity: finalGravity]];
     return YES;
 }
 
