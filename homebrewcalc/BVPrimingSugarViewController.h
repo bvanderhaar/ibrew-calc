@@ -12,8 +12,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *beerVolume;
 @property (strong, nonatomic) IBOutlet UITextField *co2Volume;
 @property (strong, nonatomic) IBOutlet UITextField *temperature;
-@property (strong, nonatomic) IBOutlet UITextField *sugarAmount;
 - (IBAction)postToFacebook:(id)sender;
 - (IBAction)findRecipes:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *sugarAmountLabel;
 
 @end

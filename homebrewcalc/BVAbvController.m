@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     self.originalGravity.delegate = self;
+    self.finalGravity.delegate = self;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -18,6 +18,8 @@
 - (void)viewDidLoad
 {
     self.temperature.delegate = self;
+    self.beerVolume.delegate = self;
+    self.co2Volume.delegate = self;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -49,11 +51,7 @@
     {
         self.co2Volume.placeholder = @"Volumes of CO\u2082";
     }
-    
-    float beerVolume = [self.beerVolume.text floatValue];
-    float co2Volume = [self.co2Volume.text floatValue];
-    float temperature = [self.temperature.text floatValue];
-    self.sugarAmount.text = [NSString stringWithFormat:@"%f", [self sugarAmountInGrams: beerVolume: co2Volume: temperature]];
+    [self updateSugarAmount];
     return YES;
 }
 
@@ -69,6 +67,14 @@
         [facebookVC setInitialText:[self.beerVolume.text stringByAppendingString:@" gallons of beer of my new brew being bottled"]];
         [self presentViewController:facebookVC animated:YES completion:NULL];
     }
+}
+
+- (void) updateSugarAmount
+{
+    float beerVolume = [self.beerVolume.text floatValue];
+    float co2Volume = [self.co2Volume.text floatValue];
+    float temperature = [self.temperature.text floatValue];
+    self.sugarAmountLabel.text = [NSString stringWithFormat:@"%f", [self sugarAmountInGrams: beerVolume: co2Volume: temperature]];
 }
 
 - (IBAction)findRecipes:(id)sender {
