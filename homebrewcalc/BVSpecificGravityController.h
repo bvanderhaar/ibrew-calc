@@ -11,7 +11,8 @@
 @interface BVSpecificGravityController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField* originalGravity;
 @property (strong, nonatomic) IBOutlet UITextField* temperature;
-@property (strong, nonatomic) IBOutlet UITextField* specificGravity;
 - (IBAction)postToFacebook:(id)sender;
 - (IBAction)findRecipes:(id)sender;
+- (IBAction)tempEditingChanged:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *specificGravity;
 @end

@@ -53,10 +53,9 @@
     }
     else
     {
-        float gravity = [self.originalGravity.text floatValue];
-        float temperature = [self.temperature.text floatValue];
-        self.specificGravity.text = [NSString stringWithFormat:@"%.3f", [self correctedSG: gravity: temperature]];
+        [self updateSpecificGravity];
     }
+    [self.temperature resignFirstResponder];
     return YES;
 }
 
@@ -77,10 +76,21 @@
     }
 }
 
+- (void) updateSpecificGravity
+{
+    float gravity = [self.originalGravity.text floatValue];
+    float temperature = [self.temperature.text floatValue];
+    self.specificGravity.text = [NSString stringWithFormat:@"%.3f", [self correctedSG: gravity: temperature]];
+}
+
 - (IBAction)findRecipes:(id)sender {
     NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
+}
+
+- (IBAction)tempEditingChanged:(id)sender {
+    [self updateSpecificGravity];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
