@@ -15,5 +15,6 @@
 - (IBAction)postToFacebook:(id)sender;
 - (IBAction)findRecipes:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *sugarAmountLabel;
+- (IBAction)sugarAmountChanged:(id)sender;
 
 @end

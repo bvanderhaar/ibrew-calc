@@ -86,4 +86,7 @@
     }
     [super touchesBegan:touches withEvent:event];
 }
+- (IBAction)finalGravityChanged:(id)sender {
+    [self updateAbvPercentage];
+}
 @end

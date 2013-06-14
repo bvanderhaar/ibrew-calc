@@ -133,6 +133,9 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Final Gravity (FG)" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KK7-zS-x1W">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="finalGravityChanged:" destination="3" eventType="editingChanged" id="gfP-sP-YVh"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-4a-Dwy">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -165,7 +168,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pB-Sq-Z6H">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="80l-2h-GJq"/>
+                                    <constraint firstAttribute="height" constant="71" id="PMd-GS-geR"/>
                                     <constraint firstAttribute="width" constant="216" id="ZxV-yU-fNe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
@@ -177,11 +180,11 @@
                         <constraints>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3ig-q8-qkc"/>
                             <constraint firstItem="0pB-Sq-Z6H" firstAttribute="centerX" secondItem="7sC-LD-63H" secondAttribute="centerX" type="default" id="64R-fw-Snr"/>
+                            <constraint firstItem="pzb-bT-EfL" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" type="default" id="BRz-u8-0vy"/>
                             <constraint firstItem="KK7-zS-x1W" firstAttribute="trailing" secondItem="pzb-bT-EfL" secondAttribute="trailing" type="default" id="J8x-o2-tqt"/>
                             <constraint firstItem="KK7-zS-x1W" firstAttribute="top" secondItem="pzb-bT-EfL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="M0M-U5-Iu8"/>
                             <constraint firstItem="7sC-LD-63H" firstAttribute="leading" secondItem="lgJ-4a-Dwy" secondAttribute="leading" type="default" id="VzM-XX-ZBp"/>
                             <constraint firstItem="7sC-LD-63H" firstAttribute="top" secondItem="lgJ-4a-Dwy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XMd-Mr-ply"/>
-                            <constraint firstItem="lgJ-4a-Dwy" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" type="default" id="Y4t-q8-3Mm"/>
                             <constraint firstItem="lgJ-4a-Dwy" firstAttribute="centerX" secondItem="KK7-zS-x1W" secondAttribute="centerX" type="default" id="bvI-OY-qfX"/>
                             <constraint firstItem="pzb-bT-EfL" firstAttribute="centerX" secondItem="22" secondAttribute="centerX" type="default" id="dGn-6b-9eu"/>
                             <constraint firstAttribute="bottom" secondItem="7sC-LD-63H" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ezZ-7r-P6f"/>
@@ -215,7 +218,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yield in Gallons" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DR1-vB-Nbg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" placeholder="Yield in Gallons" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DR1-vB-Nbg">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="dMh-FD-avH"/>
                                 </constraints>
@@ -223,13 +226,13 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Volumes of CO₂" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="S5K-GU-d3s">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="1PG-cw-YCZ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="sugarAmountChanged:" destination="772-C0-FwF" eventType="editingChanged" id="Wdq-gg-3ze"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-Dy-NBh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="60" borderStyle="roundedRect" placeholder="Temp" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-Dy-NBh">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="92" id="WfE-Vc-Cnz"/>
                                 </constraints>
@@ -272,7 +275,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-YH-M4J">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="14R-BL-c27"/>
+                                    <constraint firstAttribute="height" constant="60" id="Gvf-D4-Omj"/>
                                     <constraint firstAttribute="width" constant="280" id="X9P-j8-PYP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
@@ -282,22 +285,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DR1-vB-Nbg" firstAttribute="centerX" secondItem="GWI-Qd-Cl6" secondAttribute="centerX" type="default" id="210-l9-XPr"/>
-                            <constraint firstItem="S5K-GU-d3s" firstAttribute="centerX" secondItem="nj2-jG-KxB" secondAttribute="centerX" type="default" id="42Q-08-zq2"/>
-                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="leading" secondItem="aJq-cq-zXr" secondAttribute="leading" constant="90" id="AwJ-qK-0IU"/>
-                            <constraint firstItem="Xj4-YH-M4J" firstAttribute="top" secondItem="CEQ-f7-T0O" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="J1K-HA-ljT"/>
+                            <constraint firstItem="S5K-GU-d3s" firstAttribute="top" secondItem="DR1-vB-Nbg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="16M-fe-TZS"/>
+                            <constraint firstItem="DR1-vB-Nbg" firstAttribute="trailing" secondItem="S5K-GU-d3s" secondAttribute="trailing" type="default" id="60G-hz-5HZ"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="leading" secondItem="nj2-jG-KxB" secondAttribute="leading" type="default" id="7Xb-ZK-uvf"/>
+                            <constraint firstItem="GWI-Qd-Cl6" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="83B-zR-g6B"/>
+                            <constraint firstItem="DR1-vB-Nbg" firstAttribute="top" secondItem="Ybt-Dy-NBh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9Hi-gz-HUl"/>
+                            <constraint firstItem="S5K-GU-d3s" firstAttribute="centerX" secondItem="Xj4-YH-M4J" secondAttribute="centerX" type="default" id="Cne-Xf-jR4"/>
                             <constraint firstAttribute="bottom" secondItem="nj2-jG-KxB" secondAttribute="bottom" constant="73" id="JYo-hk-FP2"/>
-                            <constraint firstItem="DR1-vB-Nbg" firstAttribute="centerX" secondItem="aJq-cq-zXr" secondAttribute="centerX" type="default" id="KIv-wH-dVX"/>
                             <constraint firstItem="Ybt-Dy-NBh" firstAttribute="baseline" secondItem="CEQ-f7-T0O" secondAttribute="baseline" type="default" id="Ojj-Og-GIf"/>
-                            <constraint firstItem="GWI-Qd-Cl6" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="17" id="QMO-to-xtL"/>
                             <constraint firstAttribute="bottom" secondItem="ywo-nG-JgM" secondAttribute="bottom" constant="13" id="R04-4m-xbk"/>
                             <constraint firstItem="Xj4-YH-M4J" firstAttribute="centerX" secondItem="ywo-nG-JgM" secondAttribute="centerX" type="default" id="ROX-7N-cld"/>
-                            <constraint firstItem="DR1-vB-Nbg" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" constant="77" id="b5k-EY-TXs"/>
-                            <constraint firstItem="DR1-vB-Nbg" firstAttribute="centerX" secondItem="S5K-GU-d3s" secondAttribute="centerX" type="default" id="dCX-u7-Vn1"/>
+                            <constraint firstItem="DR1-vB-Nbg" firstAttribute="leading" secondItem="S5K-GU-d3s" secondAttribute="leading" type="default" id="Vze-fy-ify"/>
+                            <constraint firstItem="GWI-Qd-Cl6" firstAttribute="centerX" secondItem="nj2-jG-KxB" secondAttribute="centerX" type="default" id="W4K-Kj-Ypr"/>
+                            <constraint firstItem="GWI-Qd-Cl6" firstAttribute="top" secondItem="aJq-cq-zXr" secondAttribute="top" type="default" id="ZV4-5D-Tmn"/>
                             <constraint firstItem="ywo-nG-JgM" firstAttribute="leading" secondItem="nj2-jG-KxB" secondAttribute="leading" type="default" id="dOV-NK-hvG"/>
-                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="top" secondItem="S5K-GU-d3s" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ewH-bY-oFu"/>
-                            <constraint firstItem="S5K-GU-d3s" firstAttribute="top" secondItem="DR1-vB-Nbg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pQS-ZI-ouP"/>
-                            <constraint firstItem="CEQ-f7-T0O" firstAttribute="leading" secondItem="Ybt-Dy-NBh" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="zB7-HX-mDZ"/>
+                            <constraint firstItem="CEQ-f7-T0O" firstAttribute="leading" secondItem="Ybt-Dy-NBh" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="i58-pO-CmV"/>
+                            <constraint firstItem="Ybt-Dy-NBh" firstAttribute="top" secondItem="GWI-Qd-Cl6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qmI-Rd-GY7"/>
+                            <constraint firstItem="Xj4-YH-M4J" firstAttribute="top" secondItem="S5K-GU-d3s" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tvN-Ub-Jej"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Priming Sugar" id="jEd-cx-lLr"/>
@@ -373,43 +377,6 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="BVAbvController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVAbvController.h"/>
-            <relationships>
-                <relationship kind="action" name="findRecipes:"/>
-                <relationship kind="action" name="postToFacebook:"/>
-                <relationship kind="outlet" name="abvLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="finalGravity" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="BVPrimingSugarViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVPrimingSugarViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="findRecipes:"/>
-                <relationship kind="action" name="postToFacebook:"/>
-                <relationship kind="outlet" name="beerVolume" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="co2Volume" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="sugarAmountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="BVSpecificGravityController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVSpecificGravityController.h"/>
-            <relationships>
-                <relationship kind="action" name="findRecipes:"/>
-                <relationship kind="action" name="postToFacebook:"/>
-                <relationship kind="action" name="tempEditingChanged:"/>
-                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="specificGravity" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

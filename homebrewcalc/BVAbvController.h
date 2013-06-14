@@ -14,4 +14,5 @@
 - (IBAction)postToFacebook:(id)sender;
 - (IBAction)findRecipes:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *abvLabel;
+- (IBAction)finalGravityChanged:(id)sender;
 @end

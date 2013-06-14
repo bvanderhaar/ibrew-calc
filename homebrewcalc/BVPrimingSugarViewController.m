@@ -52,6 +52,7 @@
         self.co2Volume.placeholder = @"Volumes of CO\u2082";
     }
     [self updateSugarAmount];
+    [self.co2Volume resignFirstResponder];
     return YES;
 }
 
@@ -74,12 +75,32 @@
     float beerVolume = [self.beerVolume.text floatValue];
     float co2Volume = [self.co2Volume.text floatValue];
     float temperature = [self.temperature.text floatValue];
-    self.sugarAmountLabel.text = [NSString stringWithFormat:@"%f", [self sugarAmountInGrams: beerVolume: co2Volume: temperature]];
+    float sugarAmountToDisplay = [self sugarAmountInGrams: beerVolume: co2Volume: temperature];
+    if (sugarAmountToDisplay > 0)
+    {
+        self.sugarAmountLabel.text = [NSString stringWithFormat:@"%.3f g", sugarAmountToDisplay];
+    }
+    else
+    {
+        self.sugarAmountLabel.text = nil;
+    }
 }
 
 - (IBAction)findRecipes:(id)sender {
     NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([self.co2Volume isFirstResponder] && [touch view] != self.co2Volume) {
+        [self.co2Volume resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
+}
+- (IBAction)sugarAmountChanged:(id)sender {
+    [self updateSugarAmount];
 }
 @end
