@@ -83,18 +83,20 @@
     self.specificGravity.text = [NSString stringWithFormat:@"%.3f", [self correctedSG: gravity: temperature]];
 }
 
-- (IBAction)findRecipes:(id)sender {
+- (IBAction)findRecipes:(id)sender
+{
     NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
 }
 
-- (IBAction)tempEditingChanged:(id)sender {
+- (IBAction)tempEditingChanged:(id)sender
+{
     [self updateSpecificGravity];
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     UITouch *touch = [[event allTouches] anyObject];
     if ([self.temperature isFirstResponder] && [touch view] != self.temperature) {
         [self.temperature resignFirstResponder];

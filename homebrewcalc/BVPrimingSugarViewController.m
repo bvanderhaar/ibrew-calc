@@ -61,7 +61,8 @@
     return 15.195 * volume * ( co2Volume - 3.0378 + .050062 * temperature - .00026555 * temperature * temperature );
 }
 
-- (IBAction)postToFacebook:(id)sender {
+- (IBAction)postToFacebook:(id)sender
+{
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
     {
         SLComposeViewController* facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
@@ -86,21 +87,24 @@
     }
 }
 
-- (IBAction)findRecipes:(id)sender {
+- (IBAction)findRecipes:(id)sender
+{
     NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     UITouch *touch = [[event allTouches] anyObject];
     if ([self.co2Volume isFirstResponder] && [touch view] != self.co2Volume) {
         [self.co2Volume resignFirstResponder];
     }
     [super touchesBegan:touches withEvent:event];
 }
-- (IBAction)sugarAmountChanged:(id)sender {
+
+- (IBAction)sugarAmountChanged:(id)sender
+{
     [self updateSugarAmount];
 }
 @end
