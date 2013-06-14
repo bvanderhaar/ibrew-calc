@@ -72,6 +72,7 @@
         [self presentViewController:facebookVC animated:YES completion:NULL];
     }
 }
+
 - (IBAction)findRecipes:(id)sender {
     NSString *stringURL = @"http://beersmithrecipes.com/";
     NSURL *url = [NSURL URLWithString:stringURL];
@@ -86,6 +87,7 @@
     }
     [super touchesBegan:touches withEvent:event];
 }
+
 - (IBAction)finalGravityChanged:(id)sender {
     [self updateAbvPercentage];
 }

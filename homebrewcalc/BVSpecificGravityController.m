@@ -66,6 +66,16 @@
     return( specificGravity + (correction * 0.001) );
 }
 
+- (float) fahrenheitToCelsius: (float) temp
+{
+    return (temp - 32) * 5 / 9;
+}
+
+- (float) celsiusToFahrenheit: (float) temp
+{
+    return temp * 9 / 5 + 32;
+}
+
 - (IBAction)postToFacebook:(id)sender
 {
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
