@@ -74,7 +74,7 @@
 }
 
 - (IBAction)findRecipes:(id)sender {
-    NSString *stringURL = @"http://beersmithrecipes.com/";
+    NSString *stringURL = @"http://homebrewmanual.com/beer-alcohol-content-abv-style/";
     NSURL *url = [NSURL URLWithString:stringURL];
     [[UIApplication sharedApplication] openURL:url];
 }

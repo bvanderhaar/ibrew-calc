@@ -20,11 +20,13 @@
 		C901A138175EAA7D0080D99D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A137175EAA7D0080D99D /* Default-568h@2x.png */; };
 		C901A13B175EAA7D0080D99D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C901A139175EAA7D0080D99D /* MainStoryboard.storyboard */; };
 		C901A13E175EAA7D0080D99D /* BVSpecificGravityController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */; };
-		C901A140175EAA7D0080D99D /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A13F175EAA7D0080D99D /* first.png */; };
-		C901A142175EAA7D0080D99D /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A141175EAA7D0080D99D /* first@2x.png */; };
 		C901A145175EAA7D0080D99D /* BVAbvController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901A144175EAA7D0080D99D /* BVAbvController.m */; };
-		C901A147175EAA7D0080D99D /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A146175EAA7D0080D99D /* second.png */; };
-		C901A149175EAA7D0080D99D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A148175EAA7D0080D99D /* second@2x.png */; };
+		C92EE6C117700E8000353EDA /* beer_bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6C017700E8000353EDA /* beer_bottle.png */; };
+		C92EE6C517700F3100353EDA /* beaker.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6C417700F3100353EDA /* beaker.png */; };
+		C92EE6C717700F5000353EDA /* martini_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6C617700F5000353EDA /* martini_glass.png */; };
+		C92EE6C917700FC500353EDA /* beer_mug.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6C817700FC500353EDA /* beer_mug.png */; };
+		C92EE6CB1770133300353EDA /* vial.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6CA1770133300353EDA /* vial.png */; };
+		C92EE6CD1770134000353EDA /* beer_mug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6CC1770134000353EDA /* beer_mug@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,12 +49,14 @@
 		C901A13A175EAA7D0080D99D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C901A13C175EAA7D0080D99D /* BVSpecificGravityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVSpecificGravityController.h; sourceTree = "<group>"; };
 		C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVSpecificGravityController.m; sourceTree = "<group>"; };
-		C901A13F175EAA7D0080D99D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		C901A141175EAA7D0080D99D /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		C901A143175EAA7D0080D99D /* BVAbvController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVAbvController.h; sourceTree = "<group>"; };
 		C901A144175EAA7D0080D99D /* BVAbvController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVAbvController.m; sourceTree = "<group>"; };
-		C901A146175EAA7D0080D99D /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		C901A148175EAA7D0080D99D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		C92EE6C017700E8000353EDA /* beer_bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_bottle.png; sourceTree = "<group>"; };
+		C92EE6C417700F3100353EDA /* beaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beaker.png; sourceTree = "<group>"; };
+		C92EE6C617700F5000353EDA /* martini_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = martini_glass.png; sourceTree = "<group>"; };
+		C92EE6C817700FC500353EDA /* beer_mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug.png; sourceTree = "<group>"; };
+		C92EE6CA1770133300353EDA /* vial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vial.png; sourceTree = "<group>"; };
+		C92EE6CC1770134000353EDA /* beer_mug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer_mug@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,17 +105,19 @@
 		C901A127175EAA7D0080D99D /* homebrewcalc */ = {
 			isa = PBXGroup;
 			children = (
+				C92EE6CC1770134000353EDA /* beer_mug@2x.png */,
+				C92EE6CA1770133300353EDA /* vial.png */,
+				C92EE6C817700FC500353EDA /* beer_mug.png */,
+				C92EE6C617700F5000353EDA /* martini_glass.png */,
+				C92EE6C417700F3100353EDA /* beaker.png */,
+				C92EE6C017700E8000353EDA /* beer_bottle.png */,
 				C901A130175EAA7D0080D99D /* BVAppDelegate.h */,
 				C901A131175EAA7D0080D99D /* BVAppDelegate.m */,
 				C901A139175EAA7D0080D99D /* MainStoryboard.storyboard */,
 				C901A13C175EAA7D0080D99D /* BVSpecificGravityController.h */,
 				C901A13D175EAA7D0080D99D /* BVSpecificGravityController.m */,
-				C901A13F175EAA7D0080D99D /* first.png */,
-				C901A141175EAA7D0080D99D /* first@2x.png */,
 				C901A143175EAA7D0080D99D /* BVAbvController.h */,
 				C901A144175EAA7D0080D99D /* BVAbvController.m */,
-				C901A146175EAA7D0080D99D /* second.png */,
-				C901A148175EAA7D0080D99D /* second@2x.png */,
 				C901A128175EAA7D0080D99D /* Supporting Files */,
 				4B56E8EC1767D9A800FE99A8 /* BVPrimingSugarViewController.h */,
 				4B56E8ED1767D9A800FE99A8 /* BVPrimingSugarViewController.m */,
@@ -190,10 +196,12 @@
 				C901A136175EAA7D0080D99D /* Default@2x.png in Resources */,
 				C901A138175EAA7D0080D99D /* Default-568h@2x.png in Resources */,
 				C901A13B175EAA7D0080D99D /* MainStoryboard.storyboard in Resources */,
-				C901A140175EAA7D0080D99D /* first.png in Resources */,
-				C901A142175EAA7D0080D99D /* first@2x.png in Resources */,
-				C901A147175EAA7D0080D99D /* second.png in Resources */,
-				C901A149175EAA7D0080D99D /* second@2x.png in Resources */,
+				C92EE6C117700E8000353EDA /* beer_bottle.png in Resources */,
+				C92EE6C517700F3100353EDA /* beaker.png in Resources */,
+				C92EE6C717700F5000353EDA /* martini_glass.png in Resources */,
+				C92EE6C917700FC500353EDA /* beer_mug.png in Resources */,
+				C92EE6CB1770133300353EDA /* vial.png in Resources */,
+				C92EE6CD1770134000353EDA /* beer_mug@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

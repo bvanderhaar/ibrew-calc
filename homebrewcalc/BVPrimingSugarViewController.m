@@ -17,11 +17,29 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
     self.temperature.delegate = self;
     self.beerVolume.delegate = self;
     self.co2Volume.delegate = self;
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    float lastPrimingSugarTemp = [userDefaults floatForKey:@"lastPrimingSugarTemp"];
+    float lastPrimingSugarYield = [userDefaults floatForKey:@"lastPrimingSugarYield"];
+    float lastPrimingSugarVolume = [userDefaults floatForKey:@"lastPrimingSugarVolume"];
+    if (lastPrimingSugarTemp != 0)
+    {
+        self.temperature.text = [NSString stringWithFormat:@"%.3f", lastPrimingSugarTemp];
+    }
+    
+    if (lastPrimingSugarYield != 0)
+    {
+        self.beerVolume.text = [NSString stringWithFormat:@"%.3f", lastPrimingSugarYield];
+    }
+    
+    if (lastPrimingSugarVolume != 0)
+    {
+        self.co2Volume.text = [NSString stringWithFormat:@"%.3f", lastPrimingSugarVolume];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +55,7 @@
 
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
 {
+    
     if ([self.beerVolume.text length] == 0)
     {
         self.beerVolume.placeholder = @"Yield in Gallons";
@@ -51,6 +70,7 @@
     {
         self.co2Volume.placeholder = @"Volumes of CO\u2082";
     }
+    
     [self updateSugarAmount];
     [self.co2Volume resignFirstResponder];
     return YES;
@@ -73,9 +93,13 @@
 
 - (void) updateSugarAmount
 {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     float beerVolume = [self.beerVolume.text floatValue];
     float co2Volume = [self.co2Volume.text floatValue];
     float temperature = [self.temperature.text floatValue];
+    [userDefaults setFloat:beerVolume forKey:@"lastPrimingSugarYield"];
+    [userDefaults setFloat:temperature forKey:@"lastPrimingSugarTemp"];
+    [userDefaults setFloat:co2Volume forKey:@"lastPrimingSugarVolume"];
     float sugarAmountToDisplay = [self sugarAmountInGrams: beerVolume: co2Volume: temperature];
     if (sugarAmountToDisplay > 0)
     {
@@ -85,13 +109,7 @@
     {
         self.sugarAmountLabel.text = nil;
     }
-}
-
-- (IBAction)findRecipes:(id)sender
-{
-    NSString *stringURL = @"http://beersmithrecipes.com/";
-    NSURL *url = [NSURL URLWithString:stringURL];
-    [[UIApplication sharedApplication] openURL:url];
+    [userDefaults synchronize];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
