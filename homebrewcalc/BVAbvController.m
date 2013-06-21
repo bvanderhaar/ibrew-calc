@@ -17,10 +17,11 @@
 
 - (void)viewDidLoad
 {
-    self.originalGravity.delegate = self;
-    self.finalGravity.delegate = self;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.trackedViewName = @"ABV Calculator";
+    self.originalGravity.delegate = self;
+    self.finalGravity.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning

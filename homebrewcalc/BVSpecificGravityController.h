@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface BVSpecificGravityController : UIViewController <UITextFieldDelegate>
+#import "GAITrackedViewController.h"
+@interface BVSpecificGravityController : GAITrackedViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField* originalGravity;
 @property (strong, nonatomic) IBOutlet UITextField* temperature;
 - (IBAction)postToFacebook:(id)sender;

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface BVPrimingSugarViewController : UIViewController <UITextFieldDelegate>
+#import "GAITrackedViewController.h"
+@interface BVPrimingSugarViewController : GAITrackedViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *beerVolume;
 @property (strong, nonatomic) IBOutlet UITextField *co2Volume;
 @property (strong, nonatomic) IBOutlet UITextField *temperature;

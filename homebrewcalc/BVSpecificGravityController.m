@@ -22,10 +22,11 @@
 
 - (void)viewDidLoad
 {
-    self.originalGravity.delegate = self;
-    self.temperature.delegate = self;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.originalGravity.delegate = self;
+    self.temperature.delegate = self;
+    self.trackedViewName = @"Specific Gravity Calculator";
 }
 
 - (void)didReceiveMemoryWarning
