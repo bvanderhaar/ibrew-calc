@@ -31,6 +31,7 @@
 		C9931E2717751BF400FF0F08 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9931E2617751BF400FF0F08 /* CoreData.framework */; };
 		C9931E2917751C0100FF0F08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9931E2817751C0100FF0F08 /* SystemConfiguration.framework */; };
 		C9931E2D177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9931E2C177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m */; };
+		C9931E3017752A2600FF0F08 /* BVStrikeWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9931E2F17752A2600FF0F08 /* BVStrikeWaterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		C9931E2817751C0100FF0F08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C9931E2B177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVEfficiencyCalculatorViewController.h; sourceTree = "<group>"; };
 		C9931E2C177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVEfficiencyCalculatorViewController.m; sourceTree = "<group>"; };
+		C9931E2E17752A2600FF0F08 /* BVStrikeWaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVStrikeWaterViewController.h; sourceTree = "<group>"; };
+		C9931E2F17752A2600FF0F08 /* BVStrikeWaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVStrikeWaterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				4B56E8ED1767D9A800FE99A8 /* BVPrimingSugarViewController.m */,
 				C9931E2B177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.h */,
 				C9931E2C177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m */,
+				C9931E2E17752A2600FF0F08 /* BVStrikeWaterViewController.h */,
+				C9931E2F17752A2600FF0F08 /* BVStrikeWaterViewController.m */,
 			);
 			path = homebrewcalc;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				C901A145175EAA7D0080D99D /* BVAbvController.m in Sources */,
 				4B56E8EE1767D9A800FE99A8 /* BVPrimingSugarViewController.m in Sources */,
 				C9931E2D177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m in Sources */,
+				C9931E3017752A2600FF0F08 /* BVStrikeWaterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
