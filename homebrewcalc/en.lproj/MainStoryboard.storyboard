@@ -519,16 +519,74 @@
             </objects>
             <point key="canvasLocation" x="653" y="2507"/>
         </scene>
-        <!--View Controller - Strike Water-->
+        <!--Strike Water View Controller - Strike Water-->
         <scene sceneID="A4Y-aK-6Be">
             <objects>
-                <viewController id="2ud-o0-dWq" sceneMemberID="viewController">
+                <viewController id="2ud-o0-dWq" customClass="BVStrikeWaterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJe-Ib-vlU">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="rVV-wV-vcM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="e3S-9R-NKZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="TGB-6W-SVE">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="quarts/pound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-bi-REH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="pounds grain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyR-OJ-ugk">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3A-Xk-noS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BK6-Wa-Drs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Sparge Volume" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="up1-gk-Igc">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eX0-bi-REH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="27e-JW-6bU"/>
+                            <constraint firstAttribute="trailing" secondItem="T3A-Xk-noS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3ix-HY-WfL"/>
+                            <constraint firstItem="rVV-wV-vcM" firstAttribute="top" secondItem="VJe-Ib-vlU" secondAttribute="top" constant="69" id="85z-VQ-azR"/>
+                            <constraint firstItem="TGB-6W-SVE" firstAttribute="leading" secondItem="rVV-wV-vcM" secondAttribute="leading" type="default" id="Coj-LM-bO9"/>
+                            <constraint firstAttribute="trailing" secondItem="HyR-OJ-ugk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="H1i-wJ-pey"/>
+                            <constraint firstItem="rVV-wV-vcM" firstAttribute="leading" secondItem="VJe-Ib-vlU" secondAttribute="leading" constant="95" id="HNl-Ws-fdH"/>
+                            <constraint firstItem="eX0-bi-REH" firstAttribute="baseline" secondItem="rVV-wV-vcM" secondAttribute="baseline" type="default" id="KXa-SU-GNC"/>
+                            <constraint firstItem="T3A-Xk-noS" firstAttribute="leading" secondItem="VJe-Ib-vlU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NeI-k4-pjN"/>
+                            <constraint firstItem="up1-gk-Igc" firstAttribute="top" secondItem="VJe-Ib-vlU" secondAttribute="top" constant="2" id="nR7-SO-Kis"/>
+                            <constraint firstItem="HyR-OJ-ugk" firstAttribute="top" secondItem="TGB-6W-SVE" secondAttribute="top" type="default" id="p2T-Yr-CY2"/>
+                            <constraint firstItem="T3A-Xk-noS" firstAttribute="top" secondItem="TGB-6W-SVE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pAH-tg-QMC"/>
+                            <constraint firstItem="up1-gk-Igc" firstAttribute="centerX" secondItem="T3A-Xk-noS" secondAttribute="centerX" type="default" id="r6p-Ib-Dv0"/>
+                            <constraint firstItem="TGB-6W-SVE" firstAttribute="trailing" secondItem="rVV-wV-vcM" secondAttribute="trailing" type="default" id="vts-zn-wTf"/>
+                            <constraint firstItem="TGB-6W-SVE" firstAttribute="top" secondItem="rVV-wV-vcM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zgS-LO-zlU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Strike Water" id="3OM-s7-zqs"/>
+                    <connections>
+                        <outlet property="density" destination="rVV-wV-vcM" id="AHa-3Y-Kil"/>
+                        <outlet property="totalGrain" destination="TGB-6W-SVE" id="O4A-jN-dFm"/>
+                        <outlet property="totalVolume" destination="T3A-Xk-noS" id="djp-lY-AJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySZ-Zl-lmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -564,6 +622,65 @@
         <image name="martini_glass.png" width="32" height="32"/>
         <image name="vial.png" width="36" height="36"/>
     </resources>
+    <classes>
+        <class className="BVAbvController" superclassName="GAITrackedViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVAbvController.h"/>
+            <relationships>
+                <relationship kind="action" name="finalGravityChanged:"/>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="outlet" name="abvLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="finalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVEfficiencyCalculatorViewController" superclassName="GAITrackedViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVEfficiencyCalculatorViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="efficiencyPercentage" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ppg" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="volume" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVPrimingSugarViewController" superclassName="GAITrackedViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVPrimingSugarViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="action" name="sugarAmountChanged:"/>
+                <relationship kind="outlet" name="beerVolume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="co2Volume" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="sugarAmountLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVSpecificGravityController" superclassName="GAITrackedViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVSpecificGravityController.h"/>
+            <relationships>
+                <relationship kind="action" name="findRecipes:"/>
+                <relationship kind="action" name="postToFacebook:"/>
+                <relationship kind="action" name="tempEditingChanged:"/>
+                <relationship kind="outlet" name="originalGravity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="specificGravity" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="temperature" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BVStrikeWaterViewController" superclassName="GAITrackedViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BVStrikeWaterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="density" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="totalGrain" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="totalVolume" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GAITrackedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GAITrackedViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

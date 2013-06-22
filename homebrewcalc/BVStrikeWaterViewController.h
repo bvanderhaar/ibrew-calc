@@ -8,6 +8,9 @@
 
 #import "GAITrackedViewController.h"
 
-@interface BVStrikeWaterViewController : GAITrackedViewController
+@interface BVStrikeWaterViewController : GAITrackedViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *density;
+@property (weak, nonatomic) IBOutlet UITextField *totalGrain;
+@property (weak, nonatomic) IBOutlet UILabel *totalVolume;
 
 @end
