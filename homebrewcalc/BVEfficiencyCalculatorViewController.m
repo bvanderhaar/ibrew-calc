@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.trackedViewName = @"Efficiency Calculator";
+    self.screenName = @"Efficiency Calculator";
 }
 
 - (void)didReceiveMemoryWarning

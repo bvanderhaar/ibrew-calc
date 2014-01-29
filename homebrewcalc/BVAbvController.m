@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.trackedViewName = @"ABV Calculator";
+    self.screenName = @"ABV Calculator";
     self.originalGravity.delegate = self;
     self.finalGravity.delegate = self;
 }

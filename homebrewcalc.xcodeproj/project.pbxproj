@@ -27,11 +27,19 @@
 		C92EE6C917700FC500353EDA /* beer_mug.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6C817700FC500353EDA /* beer_mug.png */; };
 		C92EE6CB1770133300353EDA /* vial.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6CA1770133300353EDA /* vial.png */; };
 		C92EE6CD1770134000353EDA /* beer_mug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92EE6CC1770134000353EDA /* beer_mug@2x.png */; };
-		C9931E2517751BC500FF0F08 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9931E2417751BC500FF0F08 /* libGoogleAnalytics.a */; };
 		C9931E2717751BF400FF0F08 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9931E2617751BF400FF0F08 /* CoreData.framework */; };
 		C9931E2917751C0100FF0F08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9931E2817751C0100FF0F08 /* SystemConfiguration.framework */; };
 		C9931E2D177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9931E2C177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m */; };
 		C9931E3017752A2600FF0F08 /* BVStrikeWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9931E2F17752A2600FF0F08 /* BVStrikeWaterViewController.m */; };
+		C9931E32177E213D00FF0F08 /* beer_mug_120Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E31177E213D00FF0F08 /* beer_mug_120Blue.png */; };
+		C9931E34177E24E300FF0F08 /* beer_mug_114_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E33177E24E300FF0F08 /* beer_mug_114_blue.png */; };
+		C9931E36177E24FC00FF0F08 /* beer_mug_114_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E35177E24FC00FF0F08 /* beer_mug_114_blue.png */; };
+		C9931E38177E259F00FF0F08 /* beer_mug_72_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E37177E259F00FF0F08 /* beer_mug_72_blue.png */; };
+		C9931E3A177E260700FF0F08 /* beer_mug_52_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E39177E260700FF0F08 /* beer_mug_52_blue.png */; };
+		C9931E3C177E267C00FF0F08 /* beer_mug_57_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E3B177E267C00FF0F08 /* beer_mug_57_blue.png */; };
+		C9E7E0EE1898B06000361BA3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E7E0ED1898B06000361BA3 /* AdSupport.framework */; };
+		C9E7E0F01898B06B00361BA3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E7E0EF1898B06B00361BA3 /* libz.dylib */; };
+		C9E7E0F11898B19800361BA3 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E7E0EB1898AFA600361BA3 /* libGoogleAnalyticsServices.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,18 +70,27 @@
 		C92EE6C817700FC500353EDA /* beer_mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug.png; sourceTree = "<group>"; };
 		C92EE6CA1770133300353EDA /* vial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vial.png; sourceTree = "<group>"; };
 		C92EE6CC1770134000353EDA /* beer_mug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer_mug@2x.png"; sourceTree = "<group>"; };
-		C9931E1F17751B9F00FF0F08 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		C9931E2017751B9F00FF0F08 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		C9931E2117751B9F00FF0F08 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		C9931E2217751B9F00FF0F08 /* GAITransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITransaction.h; sourceTree = "<group>"; };
-		C9931E2317751BB500FF0F08 /* GAITransactionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITransactionItem.h; sourceTree = "<group>"; };
-		C9931E2417751BC500FF0F08 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		C9931E2617751BF400FF0F08 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C9931E2817751C0100FF0F08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C9931E2B177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVEfficiencyCalculatorViewController.h; sourceTree = "<group>"; };
 		C9931E2C177524EF00FF0F08 /* BVEfficiencyCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVEfficiencyCalculatorViewController.m; sourceTree = "<group>"; };
 		C9931E2E17752A2600FF0F08 /* BVStrikeWaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVStrikeWaterViewController.h; sourceTree = "<group>"; };
 		C9931E2F17752A2600FF0F08 /* BVStrikeWaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVStrikeWaterViewController.m; sourceTree = "<group>"; };
+		C9931E31177E213D00FF0F08 /* beer_mug_120Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_120Blue.png; sourceTree = "<group>"; };
+		C9931E33177E24E300FF0F08 /* beer_mug_114_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_114_blue.png; sourceTree = "<group>"; };
+		C9931E35177E24FC00FF0F08 /* beer_mug_114_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_114_blue.png; sourceTree = "<group>"; };
+		C9931E37177E259F00FF0F08 /* beer_mug_72_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_72_blue.png; sourceTree = "<group>"; };
+		C9931E39177E260700FF0F08 /* beer_mug_52_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_52_blue.png; sourceTree = "<group>"; };
+		C9931E3B177E267C00FF0F08 /* beer_mug_57_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_57_blue.png; sourceTree = "<group>"; };
+		C9E7E0E51898AF9600361BA3 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		C9E7E0E61898AF9600361BA3 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		C9E7E0E71898AF9600361BA3 /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		C9E7E0E81898AF9600361BA3 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		C9E7E0E91898AF9600361BA3 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		C9E7E0EA1898AF9600361BA3 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		C9E7E0EB1898AFA600361BA3 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		C9E7E0ED1898B06000361BA3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C9E7E0EF1898B06B00361BA3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +98,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E7E0F11898B19800361BA3 /* libGoogleAnalyticsServices.a in Frameworks */,
+				C9E7E0F01898B06B00361BA3 /* libz.dylib in Frameworks */,
+				C9E7E0EE1898B06000361BA3 /* AdSupport.framework in Frameworks */,
 				C9931E2917751C0100FF0F08 /* SystemConfiguration.framework in Frameworks */,
 				C9931E2717751BF400FF0F08 /* CoreData.framework in Frameworks */,
 				4B56E8F01767F24300FE99A8 /* Social.framework in Frameworks */,
 				C901A122175EAA7D0080D99D /* UIKit.framework in Frameworks */,
 				C901A124175EAA7D0080D99D /* Foundation.framework in Frameworks */,
 				C901A126175EAA7D0080D99D /* CoreGraphics.framework in Frameworks */,
-				C9931E2517751BC500FF0F08 /* libGoogleAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +116,10 @@
 		C901A115175EAA7D0080D99D = {
 			isa = PBXGroup;
 			children = (
+				C9931E37177E259F00FF0F08 /* beer_mug_72_blue.png */,
+				C9931E3B177E267C00FF0F08 /* beer_mug_57_blue.png */,
+				C9931E39177E260700FF0F08 /* beer_mug_52_blue.png */,
+				C9931E35177E24FC00FF0F08 /* beer_mug_114_blue.png */,
 				C9931E2A17751DA300FF0F08 /* GoogleAnalytics */,
 				C901A127175EAA7D0080D99D /* homebrewcalc */,
 				C901A120175EAA7D0080D99D /* Frameworks */,
@@ -115,6 +138,8 @@
 		C901A120175EAA7D0080D99D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9E7E0EF1898B06B00361BA3 /* libz.dylib */,
+				C9E7E0ED1898B06000361BA3 /* AdSupport.framework */,
 				C9931E2617751BF400FF0F08 /* CoreData.framework */,
 				C9931E2817751C0100FF0F08 /* SystemConfiguration.framework */,
 				4B56E8EF1767F24300FE99A8 /* Social.framework */,
@@ -130,6 +155,8 @@
 			children = (
 				C92EE6CC1770134000353EDA /* beer_mug@2x.png */,
 				C92EE6CA1770133300353EDA /* vial.png */,
+				C9931E31177E213D00FF0F08 /* beer_mug_120Blue.png */,
+				C9931E33177E24E300FF0F08 /* beer_mug_114_blue.png */,
 				C92EE6C817700FC500353EDA /* beer_mug.png */,
 				C92EE6C617700F5000353EDA /* martini_glass.png */,
 				C92EE6C417700F3100353EDA /* beaker.png */,
@@ -169,12 +196,13 @@
 		C9931E2A17751DA300FF0F08 /* GoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				C9931E2417751BC500FF0F08 /* libGoogleAnalytics.a */,
-				C9931E2317751BB500FF0F08 /* GAITransactionItem.h */,
-				C9931E1F17751B9F00FF0F08 /* GAI.h */,
-				C9931E2017751B9F00FF0F08 /* GAITrackedViewController.h */,
-				C9931E2117751B9F00FF0F08 /* GAITracker.h */,
-				C9931E2217751B9F00FF0F08 /* GAITransaction.h */,
+				C9E7E0EB1898AFA600361BA3 /* libGoogleAnalyticsServices.a */,
+				C9E7E0E51898AF9600361BA3 /* GAI.h */,
+				C9E7E0E61898AF9600361BA3 /* GAIDictionaryBuilder.h */,
+				C9E7E0E71898AF9600361BA3 /* GAIFields.h */,
+				C9E7E0E81898AF9600361BA3 /* GAILogger.h */,
+				C9E7E0E91898AF9600361BA3 /* GAITrackedViewController.h */,
+				C9E7E0EA1898AF9600361BA3 /* GAITracker.h */,
 			);
 			name = GoogleAnalytics;
 			sourceTree = "<group>";
@@ -242,6 +270,12 @@
 				C92EE6C917700FC500353EDA /* beer_mug.png in Resources */,
 				C92EE6CB1770133300353EDA /* vial.png in Resources */,
 				C92EE6CD1770134000353EDA /* beer_mug@2x.png in Resources */,
+				C9931E32177E213D00FF0F08 /* beer_mug_120Blue.png in Resources */,
+				C9931E34177E24E300FF0F08 /* beer_mug_114_blue.png in Resources */,
+				C9931E36177E24FC00FF0F08 /* beer_mug_114_blue.png in Resources */,
+				C9931E38177E259F00FF0F08 /* beer_mug_72_blue.png in Resources */,
+				C9931E3A177E260700FF0F08 /* beer_mug_52_blue.png in Resources */,
+				C9931E3C177E267C00FF0F08 /* beer_mug_57_blue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +343,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -333,7 +367,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -348,7 +382,8 @@
 				INFOPLIST_FILE = "homebrewcalc/homebrewcalc-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/brettvanderhaar/Documents/xcode-projects/homebrewcalc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -363,7 +398,8 @@
 				INFOPLIST_FILE = "homebrewcalc/homebrewcalc-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/brettvanderhaar/Documents/xcode-projects/homebrewcalc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

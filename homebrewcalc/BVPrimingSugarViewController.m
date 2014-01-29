@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.trackedViewName = @"Priming Sugar Calculator";
+    self.screenName = @"Priming Sugar Calculator";
     // Do any additional setup after loading the view.
     self.temperature.delegate = self;
     self.beerVolume.delegate = self;
