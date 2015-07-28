@@ -5,6 +5,7 @@
 //  Created by Brett VanderHaar on 6/21/13.
 //  Copyright (c) 2013 Brett VanderHaar. All rights reserved.
 //
+#import <UIKit/UIKit.h>
 
 @interface BVEfficiencyCalculatorViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *originalGravity;
