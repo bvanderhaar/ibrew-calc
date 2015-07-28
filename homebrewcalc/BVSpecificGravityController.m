@@ -7,7 +7,6 @@
 //
 
 #import "BVSpecificGravityController.h"
-#import <Social/Social.h>
 
 #define A0 (1.313454)
 #define A1 (-0.132674)
@@ -26,7 +25,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.originalGravity.delegate = self;
     self.temperature.delegate = self;
-    self.screenName = @"Specific Gravity Calculator";
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,16 +73,6 @@
 - (float) celsiusToFahrenheit: (float) temp
 {
     return temp * 9 / 5 + 32;
-}
-
-- (IBAction)postToFacebook:(id)sender
-{
-    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
-    {
-        SLComposeViewController* facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [facebookVC setInitialText:[self.originalGravity.text stringByAppendingString:@" original gravity on my new brew"]];
-        [self presentViewController:facebookVC animated:YES completion:NULL];
-    }
 }
 
 - (void) updateSpecificGravity

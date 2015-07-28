@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,9 +37,6 @@
 		C9931E38177E259F00FF0F08 /* beer_mug_72_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E37177E259F00FF0F08 /* beer_mug_72_blue.png */; };
 		C9931E3A177E260700FF0F08 /* beer_mug_52_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E39177E260700FF0F08 /* beer_mug_52_blue.png */; };
 		C9931E3C177E267C00FF0F08 /* beer_mug_57_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C9931E3B177E267C00FF0F08 /* beer_mug_57_blue.png */; };
-		C9E7E0EE1898B06000361BA3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E7E0ED1898B06000361BA3 /* AdSupport.framework */; };
-		C9E7E0F01898B06B00361BA3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E7E0EF1898B06B00361BA3 /* libz.dylib */; };
-		C9E7E0F11898B19800361BA3 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E7E0EB1898AFA600361BA3 /* libGoogleAnalyticsServices.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,14 +79,6 @@
 		C9931E37177E259F00FF0F08 /* beer_mug_72_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_72_blue.png; sourceTree = "<group>"; };
 		C9931E39177E260700FF0F08 /* beer_mug_52_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_52_blue.png; sourceTree = "<group>"; };
 		C9931E3B177E267C00FF0F08 /* beer_mug_57_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer_mug_57_blue.png; sourceTree = "<group>"; };
-		C9E7E0E51898AF9600361BA3 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		C9E7E0E61898AF9600361BA3 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		C9E7E0E71898AF9600361BA3 /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		C9E7E0E81898AF9600361BA3 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		C9E7E0E91898AF9600361BA3 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		C9E7E0EA1898AF9600361BA3 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		C9E7E0EB1898AFA600361BA3 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		C9E7E0ED1898B06000361BA3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C9E7E0EF1898B06B00361BA3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -98,9 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E7E0F11898B19800361BA3 /* libGoogleAnalyticsServices.a in Frameworks */,
-				C9E7E0F01898B06B00361BA3 /* libz.dylib in Frameworks */,
-				C9E7E0EE1898B06000361BA3 /* AdSupport.framework in Frameworks */,
 				C9931E2917751C0100FF0F08 /* SystemConfiguration.framework in Frameworks */,
 				C9931E2717751BF400FF0F08 /* CoreData.framework in Frameworks */,
 				4B56E8F01767F24300FE99A8 /* Social.framework in Frameworks */,
@@ -120,7 +106,6 @@
 				C9931E3B177E267C00FF0F08 /* beer_mug_57_blue.png */,
 				C9931E39177E260700FF0F08 /* beer_mug_52_blue.png */,
 				C9931E35177E24FC00FF0F08 /* beer_mug_114_blue.png */,
-				C9931E2A17751DA300FF0F08 /* GoogleAnalytics */,
 				C901A127175EAA7D0080D99D /* homebrewcalc */,
 				C901A120175EAA7D0080D99D /* Frameworks */,
 				C901A11F175EAA7D0080D99D /* Products */,
@@ -139,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				C9E7E0EF1898B06B00361BA3 /* libz.dylib */,
-				C9E7E0ED1898B06000361BA3 /* AdSupport.framework */,
 				C9931E2617751BF400FF0F08 /* CoreData.framework */,
 				C9931E2817751C0100FF0F08 /* SystemConfiguration.framework */,
 				4B56E8EF1767F24300FE99A8 /* Social.framework */,
@@ -193,20 +177,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C9931E2A17751DA300FF0F08 /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				C9E7E0EB1898AFA600361BA3 /* libGoogleAnalyticsServices.a */,
-				C9E7E0E51898AF9600361BA3 /* GAI.h */,
-				C9E7E0E61898AF9600361BA3 /* GAIDictionaryBuilder.h */,
-				C9E7E0E71898AF9600361BA3 /* GAIFields.h */,
-				C9E7E0E81898AF9600361BA3 /* GAILogger.h */,
-				C9E7E0E91898AF9600361BA3 /* GAITrackedViewController.h */,
-				C9E7E0EA1898AF9600361BA3 /* GAITracker.h */,
-			);
-			name = GoogleAnalytics;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,7 +208,7 @@
 				ORGANIZATIONNAME = "Brett VanderHaar";
 			};
 			buildConfigurationList = C901A119175EAA7D0080D99D /* Build configuration list for PBXProject "homebrewcalc" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -380,6 +350,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "homebrewcalc/homebrewcalc-Prefix.pch";
 				INFOPLIST_FILE = "homebrewcalc/homebrewcalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -396,6 +367,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "homebrewcalc/homebrewcalc-Prefix.pch";
 				INFOPLIST_FILE = "homebrewcalc/homebrewcalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",

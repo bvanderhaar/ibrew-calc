@@ -7,7 +7,6 @@
 //
 
 #import "BVAbvController.h"
-#import <Social/Social.h>
 
 @interface BVAbvController ()
 
@@ -19,7 +18,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.screenName = @"ABV Calculator";
     self.originalGravity.delegate = self;
     self.finalGravity.delegate = self;
 }
@@ -63,21 +61,6 @@
 - (float) abv: (float) originalGravity : (float) finalGravity
 {
     return ((1.05 * (originalGravity - finalGravity)) / finalGravity) / 0.79 * 100;
-}
-
-- (IBAction)postToFacebook:(id)sender {
-    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
-    {
-        SLComposeViewController* facebookVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [facebookVC setInitialText:[self.originalGravity.text stringByAppendingString:@" original gravity on my new brew"]];
-        [self presentViewController:facebookVC animated:YES completion:NULL];
-    }
-}
-
-- (IBAction)findRecipes:(id)sender {
-    NSString *stringURL = @"http://homebrewmanual.com/beer-alcohol-content-abv-style/";
-    NSURL *url = [NSURL URLWithString:stringURL];
-    [[UIApplication sharedApplication] openURL:url];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

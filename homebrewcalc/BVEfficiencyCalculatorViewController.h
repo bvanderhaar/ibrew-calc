@@ -6,9 +6,7 @@
 //  Copyright (c) 2013 Brett VanderHaar. All rights reserved.
 //
 
-#import "GAITrackedViewController.h"
-
-@interface BVEfficiencyCalculatorViewController : GAITrackedViewController <UITextFieldDelegate>
+@interface BVEfficiencyCalculatorViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *originalGravity;
 @property (weak, nonatomic) IBOutlet UITextField *volume;
 @property (weak, nonatomic) IBOutlet UITextField *ppg;
